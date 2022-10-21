@@ -1,17 +1,17 @@
 import { EventData } from "src/app/shared/models/event.model";
 
 export const eventData: EventData[] = [
-  {
-    imageSrc: "https://www.reso-kiknadze.de/images/galerie/11th-1.jpg",
-    imageAlt: "Reso Kiknadze Quartet",
-    bandName: "Reso Kiknade Quartet",
-    members: [
-      "Reso Kiknadze",
-      "Irakli Kuku Choladze",
-      "Nika Gabadze",
-      "Giorgi Samsonadze",
-    ]
-  },
+  // {
+  //   imageSrc: "https://www.reso-kiknadze.de/images/galerie/11th-2.jpg",
+  //   imageAlt: "Reso Kiknadze Quartet",
+  //   bandName: "Reso Kiknade Quartet",
+  //   members: [
+  //     "Reso Kiknadze",
+  //     "Irakli Kuku Choladze",
+  //     "Nika Gabadze",
+  //     "Giorgi Samsonadze",
+  //   ]
+  // },
   {
     imageSrc: "../assets/images/1984-1.jpg",
     imageAlt: "Nutsi, Papuna, Kuku, Levan, Bibich",

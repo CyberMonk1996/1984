@@ -1,52 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
 .navbar {
   background-color: rgba(0,0,0, 0.5);
-  height: 90px;
+  height: 100px;
+  width: 100%;
   font-family: "lato", serif;
   display: flex;
-  justify-content: space-between;
-}
-
-.navbar-brand {
+  align-items: center;
   position: fixed;
-  left: 100px;
-  font-size: 3.5rem;
-  color: red;
+  top: 0;
+  z-index: 2;
+  justify-content: space-between;
+  padding-right: 20px;
 }
 
-
-.navbar-nav {
-  margin-left: 75%;
-}
-
-.text-white {
-  font-size: 1.2rem;
-  font-family: "lato", ;
+.links-and-icon {
+  display: flex;
 }
 
 .social-icons {
   display: flex;
+  gap: 20px;
   color: white;
+  margin-right: 2vw;
 }
-.social-icons {
-  margin-left: -5vw;
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 4rem;
+  gap: 20px;
+}
+
+.nav-branding {
+  font-size: 3rem;
+  margin-left: 5rem;
+  color: red;
+  font-family: "lato", sans-serif;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.activePage {
+  border-bottom: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 .bi {
-  margin-left: 20px;
+  transition: 0.5s ease;
 }
-@media only screen and (max-width: 1000px) {
-  .navbar-brand {
-    margin-left: 60%;
-    position: fixed;
-    right: 100px;
-  }
-  .navbar-nav {
-    margin-left: 0px;
+
+.bi-facebook:hover {
+  transform: scale(1.2);
+  color: #4267B2;
+}
+.bi-instagram:hover {
+  transform: scale(1.2);
+  color: #E1306C;
+}
+
+@media(max-width: 768px) {
+  .hamburger {
+    display: block;
   }
 
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .links-and-icon{
+    position: fixed;
+    top: -210px;
+    transition: 0.8s;
+  }
+
+  .nav-menu {
+    width: 100vw;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0, 0.6);
+    align-items: flex-start;
+    padding-left: 20px;
+
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .links-and-icon.active {
+    top: 100px;
+    left: 0;
+  }
 
   .social-icons {
     display: none;
   }
 
 }
+
+

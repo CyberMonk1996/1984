@@ -24,13 +24,6 @@
 
 
 @media only screen and (max-width: 1000px) {
-  .carousel-container {
-    height: 100vh;
-  }
-
-  .carousel-container img {
-    height: 60vh;
-  }
 
   .social-icons {
     visibility: hidden;
@@ -59,8 +52,8 @@
 
 .dot {
   cursor: pointer;
-  height: 13px;
-  width: 13px;
+  height: 20px;
+  width: 20px;
   margin: 0 5px;
   background-color: #fff;
   border-radius: 50%;

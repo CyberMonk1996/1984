@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SliderComponent } from './slider/slider.component';
 import { MainPageComponent } from './main-page.component';
 import { MainPageRoutingModule } from './main-page-routing.module';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @NgModule({
   declarations: [
-     SliderComponent, MainPageComponent
+     SliderComponent, MainPageComponent, FooterComponent
   ],
   imports: [
     CommonModule, MainPageRoutingModule
