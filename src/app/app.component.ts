@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Brave_New_World';
+
+  // Move to Constants folder.
+ 
 }
