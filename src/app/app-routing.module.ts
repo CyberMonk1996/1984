@@ -9,6 +9,11 @@ const routes: Routes = [
       import("./features/main-page/main-page.module").then((mod) => mod.MainPageModule),
   },
   {
+    path: "events/:day",
+    loadChildren: () =>
+      import("./features/single-event/single-event.module").then((mod) => mod.SingleEventModule),
+  },
+  {
     path: "musicians",
     loadChildren: () =>
       import("./features/musicians/musicians.module").then((mod) => mod.MusiciansModule),

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { eventData } from "src/app/shared/constants/event-data";
 import { EventData } from "src/app/shared/models/event.model";
 
@@ -11,15 +11,20 @@ import { EventData } from "src/app/shared/models/event.model";
 export class SliderComponent implements OnInit {
 
   bandData: EventData[] = [];
-  @Input() indicators = true;
-  @Input() controls = true;
-  @Input() autoSlide = true;
-  @Input() slideInterval = 6000;
+  autoSlide = true;
+  slideInterval = 18000;
   selectedIndex = 0;
 
-  weekdays: string[] = [
-    "Sunday",
-  ]
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    switch(event.code) {
+      case "ArrowLeft": this.onPrevClick(); break;
+      case "ArrowRight": this.onNextClick(); break;
+    }
+  }
+
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -40,7 +45,7 @@ export class SliderComponent implements OnInit {
     this.selectedIndex = index;
   }
 
-  onPrevClick(): void {
+  onPrevClick( ): void {
     if (this.selectedIndex === 0) {
       this.selectedIndex = this.bandData.length - 1;
     } else {
@@ -57,3 +62,7 @@ export class SliderComponent implements OnInit {
   }
 
 }
+
+
+
+

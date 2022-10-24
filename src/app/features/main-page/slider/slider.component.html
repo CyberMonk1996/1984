@@ -1,28 +1,34 @@
-<div *ngIf="bandData && bandData.length > 0" class="carousel-container">
-  <img
-    *ngFor="let image of bandData; let i = index"
-    [src]="image.imageSrc"
-    [alt]="image.imageAlt"
-    [ngClass]="{'image-active' : selectedIndex === i}"
-    />
+<div *ngIf="bandData && bandData.length > 0">
+  <div  *ngFor="let band of bandData; let i = index" class="carousel-container">
+    <img
+      [src]="band.imageSrc"
+      [alt]="band.imageAlt"
+      [ngClass]="{'image-active' : selectedIndex === i}"
+      />
+    <div class="text-and-button">
+      <h1 class="page-text weekday">{{ band.eventDay}} </h1>
+      <h1 class="page-text band-name">{{ band.bandName }}</h1>
+      <button class="see-more" [routerLink]="['/events', band.eventDay]">See More</button>
+    </div>
 
-  <div *ngIf="indicators" class="carousel-dot-container">
-    <span
-      *ngFor="let dot of bandData; let i = index"
-      class="dot"
-      [ngClass]="{'active' : selectedIndex === i}"
-      (click)="selectImage(i)"
-      ></span>
+
+    <button class="btn-carousel btn-prev" (click)="onPrevClick()">
+      <i
+        class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+    </button>
+
+    <button class="btn-carousel btn-next" (click)="onNextClick()">
+      <i
+        class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+    </button>
+    <div class="carousel-dot-container">
+      <span
+        *ngFor="let dot of bandData; let i = index"
+        class="dot"
+        [ngClass]="{'active' : selectedIndex === i}"
+        (click)="selectImage(i)"
+        ></span>
+      </div>
   </div>
-
-  <button *ngIf="controls" class="btn-carousel btn-prev" (click)="onPrevClick()">
-    <i
-      class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
-  </button>
-
-  <button *ngIf="controls" class="btn-carousel btn-next" (click)="onNextClick()">
-    <i
-      class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
-  </button>
 </div>
 

@@ -1,16 +1,15 @@
 .carousel-container {
   position: relative;
-  text-align: center;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 
 .carousel-container img {
   display: none;
   height: 100vh;
-  animation: expand 2.5s forwards;
+  animation: expand 3s forwards;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 @keyframes expand {
@@ -23,18 +22,88 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
 
-  .social-icons {
-    visibility: hidden;
-  }
+// Text and button here
+
+.text-and-button {
+  position: absolute;
+  top: 35vh;
+  margin-left: 15vw;
+  color: white;
 }
 
+
+.weekday {
+  font-size: 3vw;
+  font-weight: 150;
+  text-shadow: 5px 5px rgba(0,0,0,0.6);
+}
+
+.band-name {
+  font-size: 5vw;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  font-weight: 150;
+  text-shadow: 5px 5px rgba(0,0,0,0.6);
+}
+
+// See Event Button
+
+.see-more {
+  z-index: 2;
+  width: 200px;
+  height: 70px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.8s ease;
+  cursor: pointer;
+  text-shadow: 2px 2px rgba(0,0,0,0.6);
+}
+.see-more:hover {
+  background-color: white;
+  color: rgba(0,0,0,0.8);
+  text-shadow: 2px 2px rgba(102, 99, 99, 0.6);
+}
 
 
 .carousel-container img.image-active {
   display: block;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .social-icons {
+    visibility: hidden;
+  }
+
+  .text-and-button {
+    top: 45vh;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .weekday {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    font-weight: 150;
+  }
+
+  .band-name {
+    font-size: 4rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+  }
+
+  .see-more {
+    width: 70%;
+  }
+
 }
 
 //dots/indicators
@@ -66,6 +135,8 @@
 .dot:hover {
   opacity: 1;
 }
+
+
 
 
 // left and right buttons
