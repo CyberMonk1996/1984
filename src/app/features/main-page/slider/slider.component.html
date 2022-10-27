@@ -8,7 +8,16 @@
     <div class="text-and-button">
       <h1 class="page-text weekday">{{ band.eventDay}} </h1>
       <h1 class="page-text band-name">{{ band.bandName }}</h1>
-      <button class="see-more" [routerLink]="['/events', band.eventDay]">See More</button>
+      <div class="button">
+        <button [routerLink]="['/events', band.eventDay]" class="see-more">
+          <svg width="200px" height="70px" viewBox="0 0 200 70" class="border">
+            <polyline points="0,0 50,25 50,75 200,70"/>
+            <polyline points="0,70 100,35 50,75 200,0"/>
+            <polyline points="200,0 100,35 50,75 0,70"/>
+          </svg>
+          <span>See More</span>
+        </button>
+      </div>
     </div>
 
 

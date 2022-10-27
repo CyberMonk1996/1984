@@ -1,5 +1,27 @@
 .container {
-  background-color: black;
   height: 100vh;
-  
+
+}
+
+.cards {
+  margin-top: 150px;
+}
+
+.card {
+  width: 90%;
+  height: 350px;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 1rem 0 0 1rem;
 }

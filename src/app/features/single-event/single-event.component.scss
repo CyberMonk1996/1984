@@ -1,0 +1,119 @@
+.background {
+  background-image: url("https://d35ldvitllnbt4.cloudfront.net/2018-02-Art-of-Jazz-Mixed-iPad-by-Jeremy-Sutton-1080p-crop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  filter: blur(0.2rem);
+  -webkit-filter: blur(0.2rem);
+}
+
+.container{
+  position: absolute;
+  display: flex;
+  top: 200px;
+  width: 80vw;
+  margin-left: 10vw;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  background-color: rgba(0,0,0, 0.8);
+  color: white;
+}
+
+
+.left-side {
+  width: 30%;
+  text-align: right;
+}
+
+.band-photo{
+  margin-top: -40px;
+  width: 30rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+.event-description {
+  margin-right: 2rem;
+}
+
+.border-bottom-shorter {
+  margin-bottom: -15px;
+}
+
+.social-icons {
+  margin-top: -10px;
+}
+
+.phone-number {
+  text-decoration: none;
+  color: var(--second-color);
+  padding-right: 15px;
+  border-bottom: 20px;
+  font-size: 1.4rem;
+}
+.bi {
+  transition: 0.5s ease;
+  color: white;
+}
+
+.bi-facebook {
+  margin-right: 20px;
+}
+.bi-facebook:hover {
+  transform: scale(1.2);
+  color: #4267B2;
+}
+.bi-instagram:hover {
+  transform: scale(1.2);
+  color: #E1306C;
+}
+.bi-gmail {
+  margin-left: 20px;
+  transition: 0.5s ease-in-out;
+}
+.bi-gmail:hover {
+  transform: scale(1.2);
+  color: #c71610;
+}
+
+
+// Right side starts here
+.right-side {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.band-name {
+  margin-top: 5px;
+  font-size: 4rem;
+  color: var(--second-color);
+}
+
+.musician-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.individual-card {
+  width: 220px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.musician-image {
+  width: 220px;
+  height: 300px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.musician-name {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.youtube {
+  margin-left: 200px;
+}

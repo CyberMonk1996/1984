@@ -4,4 +4,5 @@ export interface EventData {
   imageAlt: string;
   bandName: string;
   members: string[];
+  youtubeLinks: string[];
 }

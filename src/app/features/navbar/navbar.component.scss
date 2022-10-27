@@ -7,7 +7,7 @@
 
 
 .navbar {
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0,0,0, 0.7);
   height: 100px;
   width: 100%;
   font-family: "lato", serif;
@@ -95,6 +95,14 @@ a {
 .bi-instagram:hover {
   transform: scale(1.2);
   color: #E1306C;
+}
+
+.bi-gmail {
+  transition: 0.5s ease-in-out;
+}
+.bi-gmail:hover {
+  transform: scale(1.2);
+  color: #c71610;
 }
 
 @media(max-width: 768px) {

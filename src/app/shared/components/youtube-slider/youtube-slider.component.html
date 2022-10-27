@@ -1,0 +1,32 @@
+<div *ngIf="youtubeLinks && youtubeLinks.length > 0">
+  <div  *ngFor="let link of youtubeLinks; let i = index" class="carousel-container">
+
+    <youtube-player
+      class="youtube"
+      [videoId]="link"
+      suggestedQuality="highres"
+      [ngClass]="{'youtube-active' : selectedIndex === i}"
+
+    ></youtube-player>
+    <!-- [height]="250"
+      [width]="500" -->
+    <button class="btn-carousel btn-prev" (click)="onPrevClick()">
+      <i
+        class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+    </button>
+
+    <button class="btn-carousel btn-next" (click)="onNextClick()">
+      <i
+        class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+    </button>
+    <div class="carousel-dot-container">
+      <span
+        *ngFor="let dot of youtubeLinks; let i = index"
+        class="dot"
+        [ngClass]="{'active' : selectedIndex === i}"
+        (click)="selectImage(i)"
+        ></span>
+      </div>
+  </div>
+</div>
+

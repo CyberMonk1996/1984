@@ -1,7 +1,9 @@
 import { Component, OnInit, } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { eventData } from "src/app/shared/constants/event-data";
+import { musicians } from "src/app/shared/constants/musicians-data";
 import { EventData } from "src/app/shared/models/event.model";
+import { Musician } from "src/app/shared/models/musicians.model";
 
 @Component({
   selector: "app-single-event",
@@ -11,24 +13,37 @@ import { EventData } from "src/app/shared/models/event.model";
 export class SingleEventComponent implements OnInit {
   weekday!: string;
   event!: EventData;
+  bandMembers: Musician[] = [];
+
   constructor(
     private _ActivatedRoute: ActivatedRoute
   ){}
 
   ngOnInit(): void {
     this.getEvent();
-    console.log(this.event);
+    this.getMusicians();
+    console.log(this.bandMembers);
   }
 
   getEvent() {
     this._ActivatedRoute.params.subscribe((params) => {
       const day = params['day'];
-      console.log(day);
-      let event =  eventData.filter((event) => {
-        return event.eventDay = day;
+      eventData.forEach((event) => {
+        if (event.eventDay === day) {
+          this.event = event;
+        }
       })
-      this.event = event[0];
     });
+  }
+
+  getMusicians() {
+    this.event.members.forEach((artist) => {
+      musicians.forEach((musician) => {
+        if(musician.name === artist) {
+          this.bandMembers.push(musician);
+        }
+      })
+    })
   }
 
 
