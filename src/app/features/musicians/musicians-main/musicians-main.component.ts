@@ -16,4 +16,8 @@ export class MusiciansMainComponent implements OnInit {
     console.log(this.musicians);
   }
 
+  changeSpaceInLink(name: string) {
+    return name.split(" ").join("-");
+  }
+
 }

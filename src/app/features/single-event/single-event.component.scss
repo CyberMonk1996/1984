@@ -1,11 +1,10 @@
 .background {
-  background-image: url("https://d35ldvitllnbt4.cloudfront.net/2018-02-Art-of-Jazz-Mixed-iPad-by-Jeremy-Sutton-1080p-crop.jpg");
+  background-image: url("https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/270226734_135081625623826_917609956127232191_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=8sMNxG8mxZEAX-2_BPP&_nc_oc=AQnlcrlSkJzABYiiQIcrSE5XwjBxHiIXgtX-3gCk-nq3UVzsy6NJDafGg1W-zIXVmrM&_nc_ht=scontent.ftbs5-3.fna&oh=00_AfChkAgo3TBe60NgeMDZzPxa0ppiQRPjR3lTsYtyXcJsDQ&oe=6367FD7C");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 120vh;
-  filter: blur(0.2rem);
-  -webkit-filter: blur(0.2rem);
+
 }
 
 .container{
@@ -113,7 +112,9 @@
   font-size: 1.5rem;
   margin-top: 0;
 }
-
+.musician-instrument {
+  margin-top: -1.2rem;
+}
 .youtube {
   margin-left: 200px;
 }

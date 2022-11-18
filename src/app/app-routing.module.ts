@@ -18,6 +18,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./features/musicians/musicians.module").then((mod) => mod.MusiciansModule),
   },
+  {
+    path: "",
+    loadChildren: () =>
+      import("./features/musicians/musicians.module").then((mod) => mod.MusiciansModule),
+  },
 ];
 
 @NgModule({

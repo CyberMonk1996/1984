@@ -1,6 +1,36 @@
 import { Musician } from "../models/musicians.model"
 export const musicians: Musician[] = [
   {
+    name: "Daniel Adikashvili",
+    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/214738030_1110839839406700_2493900856551744871_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=oIe_mIAvGyoAX_Nijii&_nc_ht=scontent.ftbs5-3.fna&oh=00_AfAeIPD-q-hzdTzYH8o_YrIzET8ub5hDBekgAHHeQAHLUg&oe=63606947",
+    age: 29,
+    instrument: "Drums",
+    biography: ` Daniel Adikashvili
+    Drummer, Composer
+    Born in 18/06/1993
+
+    Former student of The New School of jazz,
+
+    Member of several jazz, rock, and pop bands founded In Tbilisi, Georgia.
+
+    Founder of Jazz Club 1984.
+
+    `,
+    youtubeLinks: ["ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",]
+
+  },
+  {
+    name: "Reso Kiknadze",
+    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t31.18172-8/10925503_10153179984399320_2143291150951303455_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=UhjOnxU7BAAAX_UgpxR&_nc_ht=scontent.ftbs5-3.fna&oh=00_AT_3z25LOVWnVIlJni0Pf8IW367VaS5Iux0F7tU6Cy390Q&oe=637E879A",
+    age: 55,
+    instrument: "Tenor Sax, Alto Sax",
+    biography: `
+
+    `,
+    youtubeLinks: [""]
+
+  },
+  {
     name: "Luka Topuria",
     photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/289457034_2288388607995568_6436713787835746191_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=Cu2VXssn3rcAX88UxR0&_nc_oc=AQkV9mt8nul_FQ7pUC52R5ummpIUN3Idp-9bqXIgP1YooM6cs_0BDA1a3J1Imp7bx3Q&tn=Ivx4HV5fP6W6hl6c&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT-15dhuq3je8sRGpE-FiwhM1RGVCMwc-YgbastoR5lt1w&oe=635E1E73",
     age: 23,
@@ -23,24 +53,19 @@ export const musicians: Musician[] = [
     youtubeLinks: [""]
   },
 
-  {
-    name: "Reso Kiknadze",
-    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t31.18172-8/10925503_10153179984399320_2143291150951303455_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=UhjOnxU7BAAAX_UgpxR&_nc_ht=scontent.ftbs5-3.fna&oh=00_AT_3z25LOVWnVIlJni0Pf8IW367VaS5Iux0F7tU6Cy390Q&oe=637E879A",
-    age: 55,
-    instrument: "Saxophone",
-    biography: `
 
-    `,
-    youtubeLinks: [""]
-
-  },
 
   {
     name: "Irakli Kuku Choladze",
     photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t1.6435-9/78171632_2481074682216028_6980921752792596480_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=q6klzn3SHREAX_tSRUj&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT_33o1gL3XFOKen5vaHtnjqh2CyiIJnZenV-ptT2LmO7g&oe=637DF651",
     age: 34,
     instrument: "Drums",
-    biography: ``,
+    biography: `Irakli Choladze is a drummer, improviser, composer and teacher based in Tbilisi, Georgia.
+    He graduated in jazz/composition at the Hochschule für Musik und Theater Hamburg.
+    Extensive experience and experiments in various musical genres such as: rock, jazz, progressive-rock,
+    fusion, free improvised music, and experimental electronics, creates his individual vision.His current
+    projects are: IRAKLI CHOLADZE TRIO (based in Hamburg),
+    HULEMENT TRIO (based in Tbilisi, Georgia), and few solo projects.`,
     youtubeLinks: [""]
   },
 

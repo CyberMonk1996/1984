@@ -1,12 +1,20 @@
 <div class="container">
   <div class="cards">
-    <div *ngFor="let musician of musicians;" class="card">
+    <div
+      *ngFor="let musician of musicians;"
+      class="card"
+      routerLink="/{{changeSpaceInLink(musician.name)}}"
+      (click)="changeSpaceInLink(musician.name)"
+      >
       <img
         class="image"
         [src]="musician.photo"
         [alt]="musician.name"
       >
+      <div class="info">
+        <h1 class="musician-name">{{musician.name}} </h1>
+        <h1 class="musician-instrument">{{musician.instrument}} </h1>
+      </div>
     </div>
-
   </div>
 </div>
