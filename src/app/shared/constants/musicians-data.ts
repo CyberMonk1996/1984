@@ -2,7 +2,7 @@ import { Musician } from "../models/musicians.model"
 export const musicians: Musician[] = [
   {
     name: "Daniel Adikashvili",
-    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/214738030_1110839839406700_2493900856551744871_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=oIe_mIAvGyoAX_Nijii&_nc_ht=scontent.ftbs5-3.fna&oh=00_AfAeIPD-q-hzdTzYH8o_YrIzET8ub5hDBekgAHHeQAHLUg&oe=63606947",
+    photo: "https://files.fm/thumb_show.php?i=7kwmzfrg2",
     age: 29,
     instrument: "Drums",
     biography: ` Daniel Adikashvili
@@ -21,10 +21,22 @@ export const musicians: Musician[] = [
   },
   {
     name: "Reso Kiknadze",
-    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t31.18172-8/10925503_10153179984399320_2143291150951303455_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=UhjOnxU7BAAAX_UgpxR&_nc_ht=scontent.ftbs5-3.fna&oh=00_AT_3z25LOVWnVIlJni0Pf8IW367VaS5Iux0F7tU6Cy390Q&oe=637E879A",
+    photo: "https://files.fm/thumb_show.php?i=xubmjqr8b",
     age: 55,
     instrument: "Tenor Sax, Alto Sax",
     biography: `
+      born 1960 and grown up in Tbilisi, Georgia.
+      1977-82 studied classical philology at the Tbilisi State University (diploma 1982), played saxophone in the Georgian TV Big Band and the Conservatory Jazz Quintet, performing at various festivals in Tbilisi,Tallin, Vilnius etc. 1981-90 composition studies under Mikheil Shugliashvili (1941-1996).
+      1986-90 studies at the Tbilisi State Conservatoire composition and Georgian traditional music, was a member of the Anchiskhati Cathedral Choir in Tbilisi.
+
+      1991 moved to Germany and studied composition under Friedhel Döhl at the Musikhochschule Lübeck, Electroacoustic Music under Dirk Reith, was his assistant at the Electroacoustic Studio of the Musikhochschule Lübeck.
+      1992 - 94 member of the ensemble 'Nuova Sonanza', collaboration with "tatoeba - theatre dance grotesque".
+      1998 - 2011 teacher at the Electrnic Music Studio of the Musikhochschule Lübeck, also teacher for saxophone and improvisation at the Lübecker Musikschule.
+      2000-2003 collaboration with TanzOrt Nord (2000 - 'Maria Magdalena', 2001 - 'Cumulus', 2003 - 'DisTanz').
+      2002 - joined 'Resolution Group', a free improvisation ensemble with John Eckhardt, Cordula Rohde and Benjamin Lütke. Since 2004 lecturing at various institutes about Electroacoustic music, Georgian traditional music etc. Since 2005 - collaboration with the Swiss-Gerogian contemporary music festival 'close encounters'
+      2011 - 2019 rector of the Tbilisi State Conservatoire
+
+    Currently: Professor for electroacoustic and experimental Music at the Ilia State University in Tbilisi, Georgia (since 2008); teacher at the Tbilisi State Conservatoire (since 2011); performing all over the world both as saxophone-player and computer musician in various formations of jazz, contemporary music, free improvisation; composer and coauthor of many projects with dance, visual arts, poetry, theatre, cinema; lectures and master classes in electroacoustic music, composition, improvisation, jazz.
 
     `,
     youtubeLinks: [""]
@@ -32,7 +44,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Luka Topuria",
-    photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/289457034_2288388607995568_6436713787835746191_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_ohc=Cu2VXssn3rcAX88UxR0&_nc_oc=AQkV9mt8nul_FQ7pUC52R5ummpIUN3Idp-9bqXIgP1YooM6cs_0BDA1a3J1Imp7bx3Q&tn=Ivx4HV5fP6W6hl6c&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT-15dhuq3je8sRGpE-FiwhM1RGVCMwc-YgbastoR5lt1w&oe=635E1E73",
+    photo: "https://files.fm/thumb_show.php?i=r5edwxhh3",
     age: 23,
     instrument: "Piano",
     biography: `
@@ -57,7 +69,7 @@ export const musicians: Musician[] = [
 
   {
     name: "Irakli Kuku Choladze",
-    photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t1.6435-9/78171632_2481074682216028_6980921752792596480_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=q6klzn3SHREAX_tSRUj&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT_33o1gL3XFOKen5vaHtnjqh2CyiIJnZenV-ptT2LmO7g&oe=637DF651",
+    photo: "https://files.fm/thumb_show.php?i=wug5323qj",
     age: 34,
     instrument: "Drums",
     biography: `Irakli Choladze is a drummer, improviser, composer and teacher based in Tbilisi, Georgia.
@@ -71,7 +83,15 @@ export const musicians: Musician[] = [
 
   {
     name: "Nika Gabadze",
-    photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/215367330_1110831576074193_2532254085478369556_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0debeb&_nc_ohc=FSGHqt95JIIAX_O7D9V&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT-u90UYJ9wtEQEZYZCFcNeZA636xYfR4ggbTA0H9LHq5g&oe=635E6CA2",
+    photo: "https://files.fm/thumb_show.php?i=jtg6kykdx",
+    age: 30,
+    instrument: "Guitar",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Kakha Jagashvili",
+    photo: "https://files.fm/thumb_show.php?i=jtg6kykdx",
     age: 30,
     instrument: "Guitar",
     biography: ``,
@@ -80,7 +100,47 @@ export const musicians: Musician[] = [
 
   {
     name: "Giorgi Samsonadze",
-    photo: "https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/279839351_10209946849785023_7721312891637145801_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=czoFSleWyBkAX_oTaDK&tn=Ivx4HV5fP6W6hl6c&_nc_ht=scontent.ftbs5-2.fna&oh=00_AT_5r_MomC05pNjMzvEfguAUHEr8FWdxeNIGW5HUiYTWOg&oe=635DA0D3",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    age: 35,
+    instrument: "Bass",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Lasha Deisadze",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    age: 35,
+    instrument: "Bass",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Khatia Koridze",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    age: 35,
+    instrument: "Bass",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Gigi Tsintsadze",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    age: 35,
+    instrument: "Guitar",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Noe Gabashvili",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    age: 35,
+    instrument: "Bass",
+    biography: ``,
+    youtubeLinks: [""],
+  },
+  {
+    name: "Soso Tsagareishvili",
+    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
     age: 35,
     instrument: "Bass",
     biography: ``,

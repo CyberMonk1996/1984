@@ -1,18 +1,59 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}"],
+  content: [
+    "./src/**/*.{html, ts}",
+  ],
   theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px"
+    theme: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px"
+      },
     },
     extend: {
+      animation: {
+        blob: "blob 10s infinite",
+        tilt: "tilt 10s infinite linear"
+      },
+      keyframes: {
+        tilt: {
+          "0%, 50%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "25%": {
+            transform: "rotate(3deg)",
+          },
+          "75%": {
+            transform: "rotate(-3deg)",
+          },
+        },
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.85)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        }
+      },
       colors: {
-        firstColor: "rgba(0,0,0,0.95)",
-        secondColor: "rgba(256, 256, 256, 0.95)",
+        darkBlack: "rgba(0, 0, 0, 0.95)",
+        saturatedBlack: "rgb(33, 18, 18)",
+        red1984: "rgba(212,36,41,255)",
+        darkRed: "#801336",
+        textColor: "rgba(252,252,252,255)",
+        darkGreen: "#02383C",
         thirdColor: "rgba(255, 0, 0, 0.6)",
+        veryLighCyan: "#EBFFFB",
+        veryLightBrown: "#FEE9D7",
       }
     },
   },

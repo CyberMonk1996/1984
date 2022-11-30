@@ -1,20 +1,34 @@
-<div class="container">
-  <div class="cards">
+<div class="min-h-screen pt-20 bg-gradient-to-b bg-darkGreen">
+  <!-- cards container -->
+  <div class="mt-14 md:grid grid-cols-4 gap-4 ">
+    <!-- individual cards -->
     <div
-      *ngFor="let musician of musicians;"
-      class="card"
+      class="relative group"
+      *ngFor="let musician of musicians"
+    >
+    <div class="absolute inset-x-12 inset-y-3 bg-gradient-to-b from-darkRed to-darkBlack
+      rounded-lg blur-lg opacity-75 hover:inset-24 group-hover:opacity-100 transition duration-700 group-hover:duration-200
+      animate-tilt
+      ">
+    </div>
+    <div
+      class="min-h-[560px] relative w-[90%] md:w-[80%] mx-auto my-6 py-5 rounded-xl bg-darkBlack hover:scale-105 hover:translate-x-5 duration-1000 "
       routerLink="/{{changeSpaceInLink(musician.name)}}"
       (click)="changeSpaceInLink(musician.name)"
       >
       <img
-        class="image"
+        #photo
+        class="h-0 w-0 rounded-t-xl mx-auto"
         [src]="musician.photo"
         [alt]="musician.name"
+        (load)="load(photo)"
       >
-      <div class="info">
-        <h1 class="musician-name">{{musician.name}} </h1>
-        <h1 class="musician-instrument">{{musician.instrument}} </h1>
+      <div class="info text-white mt-3 ml-4">
+        <h1 class="text-3xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
+        <h1 class="text-xl group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
       </div>
     </div>
+
+  </div>
   </div>
 </div>
