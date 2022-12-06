@@ -29,6 +29,7 @@
 
 .links-and-icon {
   display: flex;
+  align-items: center;
 }
 
 .nav-menu {
@@ -37,17 +38,9 @@
   margin-right: 4rem;
   gap: 30px;
   align-items: flex-start;
-  padding-top: 5px;
 }
 
 
-
-.social-icons {
-  display: flex;
-  gap: 20px;
-  color: white;
-  margin-right: 2vw;
-}
 
 li {
   list-style: none;
@@ -56,15 +49,6 @@ li {
 a {
   color: white;
   text-decoration: none;
-}
-
-.nav-link {
-  transition: 0.7s ease;
-  font-size: 1.5rem;
-}
-
-.nav-link:hover {
-  color: rgba(255, 0, 0, 0.6);
 }
 
 .activePage {

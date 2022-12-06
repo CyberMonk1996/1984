@@ -46,6 +46,7 @@ module.exports = {
       },
       colors: {
         darkBlack: "rgba(0, 0, 0, 0.95)",
+        lightBlack: "rgba(0,0,0, 0.8)",
         saturatedBlack: "rgb(33, 18, 18)",
         red1984: "rgba(212,36,41,255)",
         darkRed: "#801336",

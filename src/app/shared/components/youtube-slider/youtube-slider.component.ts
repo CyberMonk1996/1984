@@ -13,7 +13,6 @@ export class YoutubeSliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.youtubeLinks);
   }
 
   // sets index of image on dot/indicator click

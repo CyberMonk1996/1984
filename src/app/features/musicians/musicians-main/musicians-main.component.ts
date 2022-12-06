@@ -15,7 +15,6 @@ export class MusiciansMainComponent implements OnInit {
 
   ngOnInit(): void {
     this.musicians = musicians;
-    console.log(this.musicians);
   }
 
   changeSpaceInLink(name: string) {

@@ -2,18 +2,22 @@ import { Musician } from "../models/musicians.model"
 export const musicians: Musician[] = [
   {
     name: "Daniel Adikashvili",
-    photo: "https://files.fm/thumb_show.php?i=7kwmzfrg2",
+    photo: "https://files.fm/thumb_show.php?i=uw6rrskr4",
     age: 29,
     instrument: "Drums",
     biography: ` Daniel Adikashvili
     Drummer, Composer
     Born in 18/06/1993
 
-    Former student of The New School of jazz,
+    Bachelor of jazz department in Ilia University
+    Former student of The New School of jazz, New York
 
-    Member of several jazz, rock, and pop bands founded In Tbilisi, Georgia.
+    Past member of several famous Georgian rock, pop and fusion bands
 
-    Founder of Jazz Club 1984.
+    Author of 3 EP albums with Nika Gabadze, Luka Topuria
+    Giorgi Samsonadze and others ...
+
+    Founder of Jazz Club 1984 in 2021 november.
 
     `,
     youtubeLinks: ["ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",]
@@ -91,7 +95,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Kakha Jagashvili",
-    photo: "https://files.fm/thumb_show.php?i=jtg6kykdx",
+    photo: "https://files.fm/thumb_show.php?i=nxjkwr2wj",
     age: 30,
     instrument: "Guitar",
     biography: ``,
@@ -108,7 +112,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Lasha Deisadze",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    photo: "https://files.fm/thumb_show.php?i=r9p57fx6m",
     age: 35,
     instrument: "Bass",
     biography: ``,
@@ -116,7 +120,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Khatia Koridze",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    photo: "https://files.fm/thumb_show.php?i=gvvkd2wnn",
     age: 35,
     instrument: "Bass",
     biography: ``,
@@ -124,7 +128,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Gigi Tsintsadze",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    photo: "https://files.fm/thumb_show.php?i=cj2m6akgs",
     age: 35,
     instrument: "Guitar",
     biography: ``,
@@ -132,17 +136,17 @@ export const musicians: Musician[] = [
   },
   {
     name: "Noe Gabashvili",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
-    age: 35,
+    photo: "https://files.fm/thumb_show.php?i=jj5uvygky",
+    age: 22,
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
   },
   {
     name: "Soso Tsagareishvili",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
-    age: 35,
-    instrument: "Bass",
+    photo: "https://files.fm/thumb_show.php?i=cf5ass4ch",
+    age: 23,
+    instrument: "Drums",
     biography: ``,
     youtubeLinks: [""],
   }

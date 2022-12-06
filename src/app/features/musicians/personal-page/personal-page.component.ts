@@ -13,7 +13,7 @@ export class PersonalPageComponent implements OnInit {
   bioShort: boolean = true;
   sensei = {
     name: "Reso Kiknadze",
-    photo: "https://scontent.ftbs5-3.fna.fbcdn.net/v/t31.18172-8/10925503_10153179984399320_2143291150951303455_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=UhjOnxU7BAAAX_UgpxR&_nc_ht=scontent.ftbs5-3.fna&oh=00_AT_3z25LOVWnVIlJni0Pf8IW367VaS5Iux0F7tU6Cy390Q&oe=637E879A",
+    photo: "https://files.fm/thumb_show.php?i=xubmjqr8b",
     age: 55,
     instrument: "Tenor Sax, Alto Sax",
     biography: `
@@ -31,7 +31,23 @@ export class PersonalPageComponent implements OnInit {
     Currently: Professor for electroacoustic and experimental Music at the Ilia State University in Tbilisi, Georgia (since 2008); teacher at the Tbilisi State Conservatoire (since 2011); performing all over the world both as saxophone-player and computer musician in various formations of jazz, contemporary music, free improvisation; composer and coauthor of many projects with dance, visual arts, poetry, theatre, cinema; lectures and master classes in electroacoustic music, composition, improvisation, jazz.
 
     `,
-    youtubeLinks: [""]
+    youtubeLinks: [
+      "rWaPle0GnnM",
+      "_fdT_9uiJbA",
+      "o-Dtqlp25s4",
+      "zsaStaEWC78",
+      "WIjOntIAkG8",
+      "qkdvMVAsoOQ",
+      "98kyliG0Xls",
+    ],
+    socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+
+    }
 
   };
   isBioLong = this.sensei.biography.length > 100;
@@ -43,7 +59,7 @@ export class PersonalPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.getName());
+
   }
 
   getName() {
