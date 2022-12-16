@@ -20,7 +20,14 @@ export const musicians: Musician[] = [
     Founder of Jazz Club 1984 in 2021 november.
 
     `,
-    youtubeLinks: ["ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",]
+    youtubeLinks: ["ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
 
   },
   {
@@ -43,7 +50,14 @@ export const musicians: Musician[] = [
     Currently: Professor for electroacoustic and experimental Music at the Ilia State University in Tbilisi, Georgia (since 2008); teacher at the Tbilisi State Conservatoire (since 2011); performing all over the world both as saxophone-player and computer musician in various formations of jazz, contemporary music, free improvisation; composer and coauthor of many projects with dance, visual arts, poetry, theatre, cinema; lectures and master classes in electroacoustic music, composition, improvisation, jazz.
 
     `,
-    youtubeLinks: [""]
+    youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
 
   },
   {
@@ -66,7 +80,14 @@ export const musicians: Musician[] = [
       have to listen.
 
     `,
-    youtubeLinks: [""]
+    youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
 
 
@@ -82,7 +103,14 @@ export const musicians: Musician[] = [
     fusion, free improvised music, and experimental electronics, creates his individual vision.His current
     projects are: IRAKLI CHOLADZE TRIO (based in Hamburg),
     HULEMENT TRIO (based in Tbilisi, Georgia), and few solo projects.`,
-    youtubeLinks: [""]
+    youtubeLinks: [""],
+      socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
 
   {
@@ -92,6 +120,13 @@ export const musicians: Musician[] = [
     instrument: "Guitar",
     biography: ``,
     youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Kakha Jagashvili",
@@ -100,6 +135,13 @@ export const musicians: Musician[] = [
     instrument: "Guitar",
     biography: ``,
     youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
 
   {
@@ -109,6 +151,13 @@ export const musicians: Musician[] = [
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Lasha Deisadze",
@@ -117,6 +166,13 @@ export const musicians: Musician[] = [
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
+    socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Khatia Koridze",
@@ -125,6 +181,13 @@ export const musicians: Musician[] = [
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
+    socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Gigi Tsintsadze",
@@ -133,6 +196,13 @@ export const musicians: Musician[] = [
     instrument: "Guitar",
     biography: ``,
     youtubeLinks: [""],
+    socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Noe Gabashvili",
@@ -141,6 +211,13 @@ export const musicians: Musician[] = [
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   },
   {
     name: "Soso Tsagareishvili",
@@ -149,6 +226,13 @@ export const musicians: Musician[] = [
     instrument: "Drums",
     biography: ``,
     youtubeLinks: [""],
+        socialLinks: {
+      facebook: "https://www.facebook.com/reso.kiknadze",
+      youtube: "https://www.youtube.com/@resonicart",
+      instagram: "https://www.instagram.com/reso.kiknadze/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "resomusic@gmail.com",
+    }
   }
 
 ]

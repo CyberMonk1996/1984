@@ -1,4 +1,4 @@
-import { Component, OnInit, } from "@angular/core";
+import { Component, OnInit, Renderer2, } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { eventData } from "src/app/shared/constants/event-data";
 import { musicians } from "src/app/shared/constants/musicians-data";
@@ -16,7 +16,8 @@ export class SingleEventComponent implements OnInit {
   bandMembers: Musician[] = [];
 
   constructor(
-    private _ActivatedRoute: ActivatedRoute
+    private _ActivatedRoute: ActivatedRoute,
+    private renderer: Renderer2
   ){}
 
   ngOnInit(): void {
@@ -44,6 +45,15 @@ export class SingleEventComponent implements OnInit {
         }
       })
     })
+  }
+
+  changeSpaceInLink(name: string) {
+    return name.split(" ").join("-");
+  }
+
+  load(photo: HTMLImageElement) {
+    this.renderer.setStyle(photo, "width", "90%");
+    this.renderer.setStyle(photo, "height", "500px");
   }
 
 

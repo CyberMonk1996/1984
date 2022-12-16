@@ -38,18 +38,15 @@
 }
 
 
-.weekday {
-  font-size: 3vw;
-  font-weight: 150;
+.text-shadow {
   text-shadow: 5px 5px rgba(0,0,0,0.6);
 }
 
+
 .band-name {
   font-size: 5vw;
-  margin-top: -3rem;
-  margin-bottom: 2rem;
-  font-weight: 150;
-  text-shadow: 5px 5px rgba(0,0,0,0.6);
+  margin-top: 200px;
+  font-weight: 500;
 }
 
 // See Event Button
@@ -89,38 +86,6 @@
 
 polyline {
   width: 5px;
-}
-
-
-@media only screen and (max-width: 768px) {
-
-  .social-icons {
-    visibility: hidden;
-  }
-
-  .text-and-button {
-    top: 45vh;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .weekday {
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
-    font-weight: 150;
-  }
-
-  .band-name {
-    font-size: 4rem;
-    margin-top: -3rem;
-    margin-bottom: 2rem;
-    font-weight: 100;
-  }
-
-  .see-more {
-    width: 70%;
-  }
-
 }
 
 //dots/indicators
@@ -186,6 +151,7 @@ polyline {
   opacity: 0.7;
   transition: all 0.15s ease;
   border-radius: 50%;
+
 }
 
 .icon-carousel:hover {

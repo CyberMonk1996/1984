@@ -8,7 +8,7 @@ import { FooterComponent } from '../footer/footer.component';
 
 @NgModule({
   declarations: [
-     SliderComponent, MainPageComponent, FooterComponent
+     SliderComponent, MainPageComponent,
   ],
   imports: [
     CommonModule, MainPageRoutingModule

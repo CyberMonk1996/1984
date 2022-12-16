@@ -5,6 +5,15 @@ export interface Musician {
   instrument: string,
   biography: string,
   youtubeLinks: string[],
+  socialLinks: SocialLinks
+}
+
+interface SocialLinks {
+  facebook: string,
+  youtube: string,
+  instagram: string,
+  spotify: string,
+  mail: string,
 }
 
 

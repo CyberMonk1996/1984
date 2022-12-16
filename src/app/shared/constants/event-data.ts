@@ -51,7 +51,7 @@ export const eventData: EventData[] = [
   { eventDay: "Friday",
     imageSrc: "https://files.fm/thumb_show.php?i=fb6ar77q7",
     imageAlt: "Gia Rakviashvili, Giorgi Samsonadze, Giorgi Melikishvili",
-    bandName: "New York Tbilisi Connection Trio",
+    bandName: "Blues Night",
     members: ["Gia Rakviashvili", "Giorgi Samsonadze", "Giorgi Melikishvili"],
     youtubeLinks: [""],
   },

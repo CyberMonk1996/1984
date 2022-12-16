@@ -5,6 +5,7 @@ import { MusiciansComponent } from '../musicians/musicians.component';
 import { MusiciansRoutingModule } from './musicians-routing.module';
 import { PersonalPageComponent } from './personal-page/personal-page.component';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
+import { FooterComponent } from '../footer/footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { ComponentsModule } from 'src/app/shared/components/components.module';
   declarations: [
     MusiciansMainComponent,
     MusiciansComponent,
-    PersonalPageComponent
+    PersonalPageComponent,
+
   ],
   imports: [
     CommonModule, MusiciansRoutingModule, ComponentsModule

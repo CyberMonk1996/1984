@@ -1,8 +1,8 @@
-<div *ngIf="youtubeLinks && youtubeLinks.length > 0">
+<div class="" *ngIf="youtubeLinks && youtubeLinks.length > 0">
   <div  *ngFor="let link of youtubeLinks; let i = index" class="carousel-container">
 
     <youtube-player
-      class="youtube"
+      class="youtube w-[100%]  md:ml-[20%] md:mr-[20%]"
       [videoId]="link"
       suggestedQuality="highres"
       [ngClass]="{'youtube-active' : selectedIndex === i}"
