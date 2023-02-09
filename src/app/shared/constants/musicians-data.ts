@@ -4,7 +4,7 @@ export const musicians: Musician[] = [
     name: "Daniel Adikashvili",
     photo: "https://files.fm/thumb_show.php?i=uw6rrskr4",
     age: 29,
-    instrument: "Drums",
+    instrument: "Drums, Founder of 1984",
     biography: ` Daniel Adikashvili
     Drummer, Composer
     Born in 18/06/1993
@@ -80,7 +80,12 @@ export const musicians: Musician[] = [
       have to listen.
 
     `,
-    youtubeLinks: [""],
+      youtubeLinks: [
+        "_ZXB7zKGzWc",
+        "DfoEMVKVZHM",
+        "4EposNjHr8A",
+        "yyl8zPWyKGc",
+      ],
         socialLinks: {
       facebook: "https://www.facebook.com/reso.kiknadze",
       youtube: "https://www.youtube.com/@resonicart",
@@ -103,12 +108,18 @@ export const musicians: Musician[] = [
     fusion, free improvised music, and experimental electronics, creates his individual vision.His current
     projects are: IRAKLI CHOLADZE TRIO (based in Hamburg),
     HULEMENT TRIO (based in Tbilisi, Georgia), and few solo projects.`,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "o3cC8LlZ_z8",
+      "vF-TCCtnkbM",
+      "sSk9TyWpCCw",
+      "dsYr0Bvl8GU",
+      "zDRRAi-f090",
+    ],
       socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      facebook: "https://www.facebook.com/profile.php?id=100009405602017",
+      youtube: "",
+      instagram: "https://www.instagram.com/kukucholazen/",
+      spotify: "https://open.spotify.com/artist/40JA2CwW52Mtb1DbgXk51P",
       mail: "resomusic@gmail.com",
     }
   },
@@ -119,12 +130,12 @@ export const musicians: Musician[] = [
     age: 30,
     instrument: "Guitar",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: ["o-Dtqlp25s4", "0CWoFJX4iIY", ],
         socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      facebook: "https://www.facebook.com/nika.gabadze",
+      youtube: "",
+      instagram: "https://www.instagram.com/1984jazz/",
+      spotify: "",
       mail: "resomusic@gmail.com",
     }
   },
@@ -132,15 +143,19 @@ export const musicians: Musician[] = [
     name: "Kakha Jagashvili",
     photo: "https://files.fm/thumb_show.php?i=nxjkwr2wj",
     age: 30,
-    instrument: "Guitar",
+    instrument: "Tenor Sax",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "jcgmY5LipRw",
+      "C_ItFZ3lA-Y",
+      "dsxv1ODPgdk",
+    ],
         socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      facebook: "https://www.facebook.com/kakhi.jagashvili",
+      youtube: "https://www.youtube.com/@kakhajagashvili1510",
+      instagram: "https://www.instagram.com/1984jazz/",
+      spotify: "",
+      mail: "",
     }
   },
 
@@ -150,43 +165,100 @@ export const musicians: Musician[] = [
     age: 35,
     instrument: "Bass",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "ci5QbU5ZC30",
+      "ljH84AbWOIE",
+      "G0hZyeQjBHM",
+    ],
         socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
+      facebook: "https://www.facebook.com/georgesamsonadze",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/1984jazz/",
       spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
       mail: "resomusic@gmail.com",
+    }
+  },
+  {
+    name: "Gia Rakviashvili",
+    photo: "https://files.fm/thumb_show.php?i=j8wb344bn",
+    age: 48,
+    instrument: "Piano",
+    biography: ``,
+    youtubeLinks: [
+      "ci5QbU5ZC30",
+      "ljH84AbWOIE",
+      "G0hZyeQjBHM",
+    ],
+        socialLinks: {
+      facebook: "",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/1984jazz/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "",
+    }
+  },
+  {
+    name: "George Melikishvili",
+    photo: "https://files.fm/thumb_show.php?i=p8ybuqt28",
+    age: 50,
+    instrument: "Drums",
+    biography: ``,
+    youtubeLinks: [
+      "k4WZKd873K0",
+      "woOna1JCXJE",
+      "L5LqMJURCfE",
+      "rilHb-nUwrM",
+      "dVuoiP9jfu8",
+    ],
+        socialLinks: {
+      facebook: "https://www.facebook.com/george.melikishvili.3",
+      youtube: "https://www.youtube.com/@GeorgeMelikishvili",
+      instagram: "https://www.instagram.com/1984jazz/",
+      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      mail: "",
     }
   },
   {
     name: "Lasha Deisadze",
     photo: "https://files.fm/thumb_show.php?i=r9p57fx6m",
-    age: 35,
-    instrument: "Bass",
+    age: 24,
+    instrument: "Guitar",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "42TiW_RZ_XQ",
+      "JUZjGGA2QTM",
+      "uwwmlGz0IA8",
+      "_Va47KdvG-o",
+      "DfoEMVKVZHM",
+
+    ],
     socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      facebook: "https://www.facebook.com/lasha.desadze.9",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/lashadeis/",
+      spotify: "",
+      mail: "",
     }
   },
   {
     name: "Khatia Koridze",
     photo: "https://files.fm/thumb_show.php?i=gvvkd2wnn",
-    age: 35,
+    age: 22,
     instrument: "Bass",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "jth2iEqQu3A",
+      "fd7bVcTjajc",
+      "dhM_aIQef5M",
+      "zsaStaEWC78",
+      "tfCvQ8KXDfk",
+    ],
     socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      facebook: "https://www.facebook.com/khatia.koridze.9",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/khatiakoridze/",
+      spotify: "",
+      mail: "",
     }
   },
   {
@@ -195,13 +267,18 @@ export const musicians: Musician[] = [
     age: 35,
     instrument: "Guitar",
     biography: ``,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "Zu5Di5ezZJk",
+      "u4hBrq9qudY",
+      "qhvoG6nQG9M",
+      "VG_6QzQgs1M",
+    ],
     socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
+      facebook: "https://www.facebook.com/gigi.cincadze",
+      youtube: "https://www.youtube.com/@cincuxa",
+      instagram: "https://www.instagram.com/gigitsin/",
       spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      mail: "",
     }
   },
   {
@@ -211,7 +288,7 @@ export const musicians: Musician[] = [
     instrument: "Bass",
     biography: ``,
     youtubeLinks: [""],
-        socialLinks: {
+      socialLinks: {
       facebook: "https://www.facebook.com/reso.kiknadze",
       youtube: "https://www.youtube.com/@resonicart",
       instagram: "https://www.instagram.com/reso.kiknadze/",

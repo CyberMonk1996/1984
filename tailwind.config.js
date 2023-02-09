@@ -14,8 +14,8 @@ module.exports = {
     },
     extend: {
       animation: {
-        blob: "blob 10s infinite",
-        tilt: "tilt 10s infinite linear"
+        blob: "blob 5s infinite",
+        tilt: "tilt 5s infinite linear"
       },
       keyframes: {
         tilt: {
@@ -55,6 +55,11 @@ module.exports = {
         thirdColor: "rgba(255, 0, 0, 0.6)",
         veryLighCyan: "#EBFFFB",
         veryLightBrown: "#FEE9D7",
+        youtube: "#FF0000",
+        instagram: "#C13584",
+        facebook: "#4267B2",
+        spotify: "#1DB954",
+        gmail: "#c71610",
       }
     },
   },

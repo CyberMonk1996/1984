@@ -9,11 +9,15 @@
   font-family: lato;
   src: url("./assets/fonts/Lato-Black.ttf");
 }
+@font-face {
+  font-family: 'mochy';
+  src: url('./assets/fonts/MochiyPopOne-Regular.ttf')
+}
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'mochy';
   margin: 0px;
 }
 

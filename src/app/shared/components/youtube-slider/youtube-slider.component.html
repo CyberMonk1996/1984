@@ -1,24 +1,31 @@
 <div class="" *ngIf="youtubeLinks && youtubeLinks.length > 0">
-  <div  *ngFor="let link of youtubeLinks; let i = index" class="carousel-container">
+  <div class="relative carousel-container flex justify-center w-[60%] md:h-96 mr-7 rounded-xl">
 
-    <youtube-player
-      class="youtube w-[100%]  md:ml-[20%] md:mr-[20%]"
-      [videoId]="link"
-      suggestedQuality="highres"
-      [ngClass]="{'youtube-active' : selectedIndex === i}"
+    <iframe class="w-full h-full" [src]="'https://www.youtube.com/embed/'+ youtubeLinks[selectedIndex] | safe" frameborder="0" allowfullscreen></iframe>
 
-    ></youtube-player>
-    <!-- [height]="250"
-      [width]="500" -->
+
     <button class="btn-carousel btn-prev" (click)="onPrevClick()">
-      <i
-        class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+
+        fill="currentColor"
+        class="bi bi-arrow-left absolute left-2 md:left-4  top-14  md:top-1/2 text-white h-8 w-8 md:h-14 md:w-14 hover:scale-110 duration-700"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg>
     </button>
 
     <button class="btn-carousel btn-next" (click)="onNextClick()">
-      <i
-        class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="bi bi-arrow-right absolute  right-2 md:right-4  top-14  md:top-1/2 text-white h-8 w-8 md:h-14 md:w-14 hover:scale-110 duration-300"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
     </button>
+
+
     <div class="carousel-dot-container">
       <span
         *ngFor="let dot of youtubeLinks; let i = index"

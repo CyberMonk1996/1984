@@ -1,4 +1,4 @@
 <app-navbar></app-navbar>
+<app-spinner class="absolute z-10" *ngIf="spinnerService.loading$() | async"></app-spinner>
 <router-outlet></router-outlet>
 <app-footer class="block md:hidden"></app-footer>
-<app-spinner></app-spinner>

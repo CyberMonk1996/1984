@@ -1,34 +1,24 @@
 import { Injectable } from "@angular/core";
-import { BehaviorSubject, Observable } from "rxjs";
+import { BehaviorSubject, Observable, Subject } from "rxjs";
 
 @Injectable({
     providedIn: 'root'
 })
 export class SpinnerService {
-    private count = 0;
-    private spinner$ = new BehaviorSubject<string>('');
 
-    constructor() {}
+  constructor() {}
 
-    getSpinnerObserver(): Observable<string> {
-        return this.spinner$.asObservable();
-    }
+  loading: Subject<boolean> = new Subject();
 
-    requestStarted() {
-        if (++this.count === 1) {
-            this.spinner$.next("start");
-        }
-    }
+  loading$(): Observable<boolean> {
+    return this.loading.asObservable();
+  }
 
-    requestEnded() {
-        if (this.count === 0 || --this.count === 0) {
-            this.spinner$.next("stop");
-        }
-    }
+  start() {
+    this.loading.next(true);
+  }
 
-    resetSpinner() {
-        this.count = 0;
-        this.spinner$.next("stop");
-    }
-
+  end() {
+    this.loading.next(false);
+  }
 }

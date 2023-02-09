@@ -5,7 +5,6 @@ import { MusiciansComponent } from '../musicians/musicians.component';
 import { MusiciansRoutingModule } from './musicians-routing.module';
 import { PersonalPageComponent } from './personal-page/personal-page.component';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
-import { FooterComponent } from '../footer/footer.component';
 
 
 
@@ -18,6 +17,7 @@ import { FooterComponent } from '../footer/footer.component';
   ],
   imports: [
     CommonModule, MusiciansRoutingModule, ComponentsModule
-  ]
+  ],
+
 })
 export class MusiciansModule { }

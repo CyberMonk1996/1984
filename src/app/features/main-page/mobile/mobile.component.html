@@ -1,0 +1,28 @@
+<!-- main container -->
+<div class="min-h-screen bg-darkGreen pt-28">
+  <!-- Cards -->
+  <div
+    *ngFor="let band of bandData"
+    class=" relative w-[90%] h-64 mx-auto my-4 border-2 border-gray-800 rounded-lg"
+  >
+    <img
+      class="w-full h-full rounded-lg"
+      [src]="band.imageSrc"
+      alt="band photo">
+    <!-- Info -->
+    <div class="absolute top-10 w-full ">
+      <h1 class="text-white text-3xl text-shadow mb-6 text-center">{{band.eventDay}}</h1>
+      <h1 class="text-white text-3xl text-shadow  text-center">{{band.bandName}}</h1>
+    </div>
+    <!-- button -->
+    <div class="absolute bottom-3 w-full text-center ">
+      <button
+          [routerLink]="['/events', band.eventDay]"
+          class="z-10 w-[150px] h-12  text-white bg-gradient-to-t from-black to-transparent border-2 rounded-lg
+            text-2xl font-semibold cursor-pointer hover:scale-110 duration-500 ease-out">
+          <span class="text-xl text-shadow shadow-xl">See More</span>
+
+        </button>
+    </div>
+  </div>
+</div>

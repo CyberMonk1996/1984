@@ -13,16 +13,12 @@ export class SpinnerComponent implements OnInit {
   constructor(
     private spinnerService: SpinnerService,
     private cdRef: ChangeDetectorRef
-  ) { }
+  ) {
+
+  }
 
   ngOnInit(): void {
-    this.init();
+
   }
 
-  init() {
-    this.spinnerService.getSpinnerObserver().subscribe((status) => {
-      this.showSpinner = status === "start";
-       this.cdRef.detectChanges();
-    });
-  }
 }

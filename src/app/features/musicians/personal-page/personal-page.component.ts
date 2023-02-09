@@ -13,6 +13,7 @@ export class PersonalPageComponent implements OnInit {
   musician!: Musician;
   isBioLong!: boolean;
   musicianName!: string;
+
   constructor(
     private _ActivatedRoute: ActivatedRoute
   ) { }
@@ -20,7 +21,6 @@ export class PersonalPageComponent implements OnInit {
   ngOnInit(): void {
     this.findFromArray();
     this.isBioLong = this.musician.biography.length > 100;
-
   }
 
   getName() {

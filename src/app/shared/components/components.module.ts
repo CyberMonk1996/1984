@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { YoutubeSliderComponent } from './youtube-slider/youtube-slider.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { SafePipe } from '../pipes/safe-pipe';
 
 
 
@@ -10,6 +11,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
   declarations: [
     YoutubeSliderComponent,
     SpinnerComponent,
+    SafePipe
   ],
   imports: [
     CommonModule, YouTubePlayerModule
@@ -17,6 +19,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
   exports: [
     YoutubeSliderComponent,
     SpinnerComponent,
-  ]
+  ],
+
 })
 export class ComponentsModule { }

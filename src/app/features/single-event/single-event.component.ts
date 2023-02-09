@@ -23,7 +23,6 @@ export class SingleEventComponent implements OnInit {
   ngOnInit(): void {
     this.getEvent();
     this.getMusicians();
-    console.log(this.bandMembers);
   }
 
   getEvent() {
