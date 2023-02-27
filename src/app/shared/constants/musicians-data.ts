@@ -2,7 +2,7 @@ import { Musician } from "../models/musicians.model"
 export const musicians: Musician[] = [
   {
     name: "Daniel Adikashvili",
-    photo: "https://files.fm/thumb_show.php?i=uw6rrskr4",
+    photo: "https://files.fm/thumb_show.php?i=27unb7jz9",
     age: 29,
     instrument: "Drums, Founder of 1984",
     biography: ` Daniel Adikashvili
@@ -34,7 +34,7 @@ export const musicians: Musician[] = [
     name: "Reso Kiknadze",
     photo: "https://files.fm/thumb_show.php?i=xubmjqr8b",
     age: 55,
-    instrument: "Tenor Sax, Alto Sax",
+    instrument: "Soprano Sax, Alto Sax",
     biography: `
       born 1960 and grown up in Tbilisi, Georgia.
       1977-82 studied classical philology at the Tbilisi State University (diploma 1982), played saxophone in the Georgian TV Big Band and the Conservatory Jazz Quintet, performing at various festivals in Tbilisi,Tallin, Vilnius etc. 1981-90 composition studies under Mikheil Shugliashvili (1941-1996).
@@ -140,6 +140,62 @@ export const musicians: Musician[] = [
     }
   },
   {
+    name: "Zuka Simonishvili",
+    photo: "https://files.fm/thumb_show.php?i=6esqm666x",
+    age: 30,
+    instrument: "Guitar",
+    biography: ``,
+    youtubeLinks: ["F1wcVOrRcPo", "AW85gE1rDc4", ],
+        socialLinks: {
+      facebook: "https://www.facebook.com/ledi.marmeli",
+      youtube: "https://www.youtube.com/@zuka9572",
+      instagram: "https://www.instagram.com/zukasimonishvili/",
+      spotify: "",
+      mail: "https://open.spotify.com/user/o2czo9vyno2gnx0hu33ysrsvf",
+    }
+  },
+
+  {
+    name: "Levan Kemo",
+    photo: "https://files.fm/thumb_show.php?i=vzxkg6da3",
+    age: 30,
+    instrument: "Trumpet",
+    biography: ``,
+    youtubeLinks: [
+      "jbnK0hNevlI",
+      "lDJuwRPNdIA",
+      "xj5IyLBS9mQ",
+      "cl-QqW79HLc",
+    ],
+        socialLinks: {
+      facebook: "https://www.facebook.com/egor.popov.944",
+      youtube: "https://www.youtube.com/@afrasion22",
+      instagram: "https://www.instagram.com/kemo_musician/",
+      spotify: "https://open.spotify.com/artist/6DNdjzAZWGvVkWiK3uTKSH",
+      mail: "",
+    }
+  },
+  {
+    name: "Egor Popov",
+    photo: "https://files.fm/thumb_show.php?i=ew92tgcav",
+    age: 30,
+    instrument: "Trumpet",
+    biography: ``,
+    youtubeLinks: [
+      // "jbnK0hNevlI",
+      // "lDJuwRPNdIA",
+      // "xj5IyLBS9mQ",
+      // "cl-QqW79HLc",
+    ],
+        socialLinks: {
+      facebook: "https://www.facebook.com/egor.popov.944",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/krenco_ep/",
+      spotify: "https://open.spotify.com/artist/1dp5CnT8NdXbIXhEA0ZkvD",
+      mail: "",
+    }
+  },
+  {
     name: "Kakha Jagashvili",
     photo: "https://files.fm/thumb_show.php?i=nxjkwr2wj",
     age: 30,
@@ -161,10 +217,23 @@ export const musicians: Musician[] = [
 
   {
     name: "Giorgi Samsonadze",
-    photo: "https://files.fm/thumb_show.php?i=7g5u6mwhf",
+    photo: "https://files.fm/thumb_show.php?i=2vbtkm3mu",
     age: 35,
     instrument: "Bass",
-    biography: ``,
+    biography: ` Giorgi Samsonadze - Painter, Jazz Musician, Teacher.
+      He, alike his parents has studied in Tbilisi State Academy of Arts (Faculty of Painting 1998 - 2004). At the age of 13 he got interested with music and
+      his choice of instrument was guitar, (later with Bass). For a long time he collaborated with musicians like:
+      Composer Nukri Abashidze (2000)
+      Gia Rakviashvili (2001-till today)
+      Rock and Roll band "Vakis Parki" (2000 - 2022)
+      Tbilisi City Hall Orchestra "Big Band" (2005 - till today)
+      "Wakho Jorjholiani Blues Band"
+      "Reso Kiknadze Quartet"
+      "New York - Tbilisi connection trio"
+      "Rooftop Underground"
+      "Kakhi Jagashvili Quartet".
+      Is a lecturer in Tbilisi State Conservatoire Jazz School (2011 - till today).
+    `,
     youtubeLinks: [
       "ci5QbU5ZC30",
       "ljH84AbWOIE",

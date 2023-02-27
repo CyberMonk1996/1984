@@ -8,7 +8,7 @@
 .carousel-container img {
   display: none;
   height: 100vh;
-  animation: expand 3s forwards;
+  animation: expand 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   object-fit: cover;
   opacity: 0.9;
 }
@@ -18,11 +18,17 @@
 }
 
 @keyframes expand {
-  from {
-    transform: scale(1);
+  0% {
+    transform: scale(1.01) rotate(0deg);
+    opacity: 0.9;
   }
-  to {
-    transform: scale(1.05)
+  50% {
+    transform: scale(1.03) rotate(0.1deg);
+    opacity: 1.1;
+  }
+  100% {
+    transform: scale(0.91) rotate(-0.1deg);
+    opacity: 1;
   }
 }
 

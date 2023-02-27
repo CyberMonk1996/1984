@@ -4,6 +4,7 @@ import { YoutubeSliderComponent } from './youtube-slider/youtube-slider.componen
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SafePipe } from '../pipes/safe-pipe';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -11,7 +12,8 @@ import { SafePipe } from '../pipes/safe-pipe';
   declarations: [
     YoutubeSliderComponent,
     SpinnerComponent,
-    SafePipe
+    SafePipe,
+    CardComponent
   ],
   imports: [
     CommonModule, YouTubePlayerModule

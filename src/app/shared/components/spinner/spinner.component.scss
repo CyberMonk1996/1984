@@ -26,18 +26,5 @@
     z-index: 1000;
     background-color: rgba(0,0,0,0.9);
 
-    .bee-spinner {
-        width: 20%;
-        height: 40%;
-        position: fixed;
-        top: 40%;
-        left: calc(50% - 10%);
-        z-index: 100;
-        background-image: url(../../../../assets/images/1984_1.png);
-        background-repeat: no-repeat;
-        background-size: 97%;
-        animation: bouncing 1s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 
-
-    }
 }

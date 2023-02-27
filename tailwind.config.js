@@ -11,6 +11,26 @@ module.exports = {
         lg: "976px",
         xl: "1440px"
       },
+      fontSize: {
+        'sm': '0.875rem',
+        'base': '1rem',
+        'lg': '1.125rem',
+        'xl': '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+        '4xl': '2.25rem',
+        '5xl': '3rem',
+        '6xl': '4rem',
+        '7xl': '5rem',
+        "13": "13px",
+        "17": "17px",
+        '0.97': '0.97rem',
+      },
+      width: {
+        "415": "415px",
+        "425": "425px",
+        '440': '440px',
+      },
     },
     extend: {
       animation: {

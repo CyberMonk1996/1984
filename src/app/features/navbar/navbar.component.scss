@@ -1,12 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
 
 .navbar {
   background-color: rgba(0,0,0, 0.7);
-  height: 65px;
+  height: 43px;
   width: 100%;
   font-family: "lato", serif;
   display: flex;
@@ -18,27 +13,9 @@
   padding-right: 20px;
 }
 
-.nav-branding {
-  font-size: 3rem;
-  margin-left: 5rem;
-  color: red;
+.brand {
   font-family: "lato", sans-serif;
 }
-
-.links-and-icon {
-  display: flex;
-  align-items: center;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  margin-right: 4rem;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-
 
 li {
   list-style: none;
@@ -69,6 +46,10 @@ a {
   background-color: white;
 }
 
+.text-shadow {
+  text-shadow: 4px 3px rgba(0,0,0,0.6);
+}
+
 
 @media(max-width: 768px) {
   .hamburger {
@@ -85,10 +66,28 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .links-and-icon {
+    display: flex;
+    align-items: center;
+    margin-top: -27px;
+  }
+
   .links-and-icon{
     position: fixed;
-    top: -210px;
+    align-items: center;
+    top: -70px;
     transition: 0.8s;
+  }
+
+  @media (min-width: 768px) {
+    /* CSS rules for screens 768px or less */
+    .links-and-icon {
+      position: absolute;
+      margin-left: 10vw;
+      background-color: rgba(0,0,0, 0.8);
+      width: 90vw;
+
+    }
   }
 
   .nav-item {
@@ -96,8 +95,7 @@ a {
   }
 
   .links-and-icon.active {
-    top: 100px;
-    left: 0;
+    top: 65px;
   }
 
   .social-icons {

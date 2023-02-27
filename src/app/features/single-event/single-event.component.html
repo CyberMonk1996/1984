@@ -1,7 +1,7 @@
-<div class="min-h-screen -mt-28 pt-28 bg-darkGreen ">
-  <div class=" flex flex-col md:flex-row w-[90%] mt-28 pb-20 md:mt-36 py-8 mx-auto bg-lightBlack rounded-lg">
+<div class="min-h-screen -mt-28 pt-28 pb-10 background md:bg-darkGreen">
+  <div class=" flex flex-col md:flex-row w-[90%] mt-28 pb-10 md:mt-36 py-8 mx-auto bg-lightBlack rounded-lg">
     <!-- Left Side -->
-    <div class="flex flex-col w-[90%] md:w-[30%] mx-auto pl-5">
+    <div class="flex flex-col w-[90%] md:w-[30%] mx-auto md:ml-5 ">
       <img
       class="w-96 h-52 md:h-72 rounded-xl -mt-14 md:-mt-14 mb-6"
       [src]="event.imageSrc"
@@ -47,34 +47,34 @@
     </div>
 
     <!-- Right Side -->
-    <div class="md:w-[70%] ml-8">
+    <div class="w-[90%] md:w-[70%] mx-auto md:mx-7">
       <h1 class="hidden md:block text-white text-3xl md:text-5xl text-shadow">{{event.bandName}} </h1>
-      <h1 class=" text-3xl ml-14 mt-14 inline-block text-white text-shadow">Members: </h1>
-      <div class="flex flex-col px-3 md:grid md:grid-cols-3 mb-5">
+      <h1 class=" text-3xl ml-14 md:ml-0 mt-14 inline-block text-white text-shadow">Members: </h1>
+      <div class="flex flex-col md:grid md:grid-cols-3 mb-5">
         <div
           *ngFor="let musician of bandMembers"
-          class="group relative w-full md:w-[300px] mx-auto my-3 md:my-6 py-5 rounded-xl bg-darkBlack
+          class="group relative w-full md:w-[270px] md:h-[440px] mx-auto my-3 md:my-6 py-5 rounded-xl bg-darkBlack
             hover:scale-105 hover:translate-x-5 duration-300 cursor-pointer
             hover:shadow-md hover:shadow-darkGreen
             "
-          routerLink="/{{changeSpaceInLink(musician.name)}}"
+          routerLink="/musicians/{{changeSpaceInLink(musician.name)}}"
           (click)="changeSpaceInLink(musician.name)"
         >
           <img
             #photo
-            class=" max-h-[350px] rounded-t-xl mx-auto custom"
+            class=" max-h-[300px] rounded-t-xl mx-auto custom"
             [src]="musician.photo"
             [alt]="musician.name"
             (load)="load(photo)"
           >
           <div class="info text-white mt-3 ml-4">
-            <h1 class="text-3xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
-            <h1 class="text-xl group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
+            <h1 class="text-17 md:xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
+            <h1 class="text-13 md:text-lg group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
           </div>
         </div>
 
       </div>
-      <app-youtube-slider class="youtube rounded-lg mx-auto" [youtubeLinks]="event.youtubeLinks"></app-youtube-slider>
+      <app-youtube-slider *ngIf="event.youtubeLinks[0].length > 0" class="youtube rounded-lg mx-auto" [youtubeLinks]="event.youtubeLinks"></app-youtube-slider>
     </div>
   </div>
 

@@ -5,11 +5,12 @@ import { MainPageComponent } from './main-page.component';
 import { MainPageRoutingModule } from './main-page-routing.module';
 import { FooterComponent } from '../footer/footer.component';
 import { MobileComponent } from './mobile/mobile.component';
+import { LargeComponent } from './large/large.component';
 
 
 @NgModule({
   declarations: [
-     SliderComponent, MainPageComponent, MobileComponent,
+     SliderComponent, MainPageComponent, MobileComponent, LargeComponent,
   ],
   imports: [
     CommonModule, MainPageRoutingModule

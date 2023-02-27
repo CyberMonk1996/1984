@@ -2,3 +2,15 @@
   text-shadow: 1.5px 2px #02383C;
 }
 // 02383C
+.background {
+  background-image: url('../../../assets/images/MJbackground.png');
+  background-repeat: repeat;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 767px) {
+  .background {
+    background-image: url('../../../assets/images/background.PNG');
+    background-size: cover;
+  }
+}
