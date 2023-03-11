@@ -30,9 +30,13 @@ module.exports = {
         "415": "415px",
         "425": "425px",
         '440': '440px',
+        "100": "100vw",
       },
     },
     extend: {
+      scale: {
+        '101': '1.01',
+      },
       animation: {
         blob: "blob 5s infinite",
         tilt: "tilt 5s infinite linear"

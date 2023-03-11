@@ -8,16 +8,19 @@
       />
 
     <div class="absolute w-[100%] top-40 text-white flex flex-col items-center ">
-      <h1 class="text-5xl my-10 mx-auto text-shadow">{{ band.eventDay}} </h1>
+      <!-- <h1 class="text-5xl my-10 mx-auto text-shadow">{{ band.eventDay}} </h1>
 
-        <h1 class="text-4xl md:my-28 md:text-6xl my-10 text-shadow ">{{ band.bandName }}</h1>
+        <h1 class="text-4xl md:my-28 md:text-6xl my-10 text-shadow ">{{ band.bandName }}</h1> -->
 
-      <div class="absolute md:bottom-5 mx-auto">
+      <div class="absolute md:top-64 mx-auto">
         <button
           [routerLink]="['/events', band.eventDay]"
           class=" z-10 w-[200px] h-16 text-white bg-transparent border-2 rounded-lg
-            text-2xl font-semibold cursor-pointer hover:scale-110 duration-500 ease-out">
-          <span class="text-2xl">See More</span>
+            text-2xl font-semibold cursor-pointer hover:scale-110 duration-500 ease-out
+            shadow-lg hover:shadow-xl"
+            style="box-shadow: 5px 4px 7px 2px black;"
+            >
+          <span class="text-2xl text-shadow shadow-xl">See More</span>
         </button>
       </div>
 

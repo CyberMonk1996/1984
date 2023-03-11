@@ -72,7 +72,7 @@
     </div>
     <!-- bio -->
     <h1 class="mt-5 text-xl text-white md:text-3xl">Biography</h1>
-    <h1 class="mt-2 text-white md:text-xl">{{ shortenBio(musician.biography) }} </h1>
+    <h1 class="mt-2 text-white md:text-base">{{ shortenBio(musician.biography) }} </h1>
     <span
       *ngIf="isBioLong"
       (click)="toggleBioLength()"

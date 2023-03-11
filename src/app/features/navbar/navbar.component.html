@@ -2,8 +2,8 @@
   <nav class="navbar ">
     <h1 [routerLink]="['/']" class="text-5xl text-red1984 w-28 pl-5 md:pl-5 cursor-pointer">1984</h1>
     <div class="links-and-icon" [ngClass]="{'active' : collapsed}">
-      <div class="w-415 flex">
-        <ul class=" md:h-11 h-16 flex items-center bg-lightBlack md:bg-transparent gap-7 pl-6 " >
+      <div class="flex">
+        <ul class=" md:h-8 h-8 width flex items-center justify-start  bg-lightBlack md:bg-transparent gap-7 pl-6 " >
           <li class="nav-item">
             <a
               (click)="hamburger()"
@@ -27,7 +27,7 @@
           </li>
         </ul>
 
-        <div class="hidden md:flex items-center flex-row gap-2 text-white md:mr-20">
+        <div class="hidden md:flex items-center flex-row gap-2 text-white md:mr-20 pl-6">
           <a href="https://www.facebook.com/1984Jazz" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"

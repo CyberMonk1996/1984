@@ -20,7 +20,7 @@ export const musicians: Musician[] = [
     Founder of Jazz Club 1984 in 2021 november.
 
     `,
-    youtubeLinks: ["ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",],
+    youtubeLinks: ["MgxWPU6ojnM","ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",],
         socialLinks: {
       facebook: "https://www.facebook.com/reso.kiknadze",
       youtube: "https://www.youtube.com/@resonicart",
@@ -64,7 +64,7 @@ export const musicians: Musician[] = [
     name: "Luka Topuria",
     photo: "https://files.fm/thumb_show.php?i=r5edwxhh3",
     age: 23,
-    instrument: "Piano",
+    instrument: "Keyboard",
     biography: `
       Luka was 5 years old, when he started to play the piano. Being raised
       in the family of musicians, beautiful melodies became his guide since the early childooh.
@@ -88,10 +88,10 @@ export const musicians: Musician[] = [
       ],
         socialLinks: {
       facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
+      youtube: "https://www.youtube.com/@1984jazzclub",
+      instagram: "https://www.instagram.com/lluka_topuria/",
       spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      mail: "",
     }
   },
 
@@ -267,17 +267,17 @@ export const musicians: Musician[] = [
     }
   },
   {
-    name: "George Melikishvili",
+    name: "George Melikishvili George Mel",
     photo: "https://files.fm/thumb_show.php?i=p8ybuqt28",
     age: 50,
-    instrument: "Drums",
-    biography: ``,
+    instrument: "Drums, Percussion",
+    biography: `Internationally renowned Georgian-American drummer, percussionist,  composer, arranger, songwriter, bandleader and clinician, Bosphorus Cymbals Artist.
+    More than 30 years of professional experience as a freelance drummer/percussionist, diverse in a wide variety of styles. Performed and recorded with top world class musicians of all generations such as Lionel Loueke, Mark Helias, Esperanza Spalding, Mino Cinelu (Miles Davis, Sting, Weather Report) Wayne Escoffery, Duane Eubanks, Dom Salvador, Leo Genovese, Nilson Matta, Avishai Cohen, Perry Robinson, Raul Midon, Freddy Bryant, Essiet Essiet (Art Blakey), Cheryl Bentyne (Manhattan Transfer), Jesse Murphy (Brazilian Girls), Keith Carlock (Sting, Steely Dan), Badal Roy (Miles Davis 1970-1973),Valeri Ponomarev (Art Blakey), John Ellis, Victor Prieto , Edsel Gomez, and many others. Performances in the USA at landmark venues such as Carnegie Hall, Blue Note, World Café Live, Iridium, Smoke, Jazz Standard, Jazz At Kitano, The Deer Head In , and most others.  US Citizen naturalized under the  ‘Extraordinary Ability  In the Arts’ category status granted in 2007 by the U.S. Government. Since performance as a leader of the George Mel  Quartet at the Tbilisi International Jazz  Festival  2014, George Mel  is based in Tbilisi , Georgia and is doing concert and studio work with major Georgian artists , teaching at the Jazz Department of the Tbilisi State Conservatory ,as well as doing clinics, workshops, master classes and concert  tours  internationally both as a sideman, as well as  a leader of his own original projects.`,
     youtubeLinks: [
+      "CbEFW0Im4z8",
       "k4WZKd873K0",
       "woOna1JCXJE",
       "L5LqMJURCfE",
-      "rilHb-nUwrM",
-      "dVuoiP9jfu8",
     ],
         socialLinks: {
       facebook: "https://www.facebook.com/george.melikishvili.3",
@@ -352,7 +352,7 @@ export const musicians: Musician[] = [
   },
   {
     name: "Noe Gabashvili",
-    photo: "https://files.fm/thumb_show.php?i=jj5uvygky",
+    photo: "https://files.fm/thumb_show.php?i=vv9jfb3p7",
     age: 22,
     instrument: "Bass",
     biography: ``,
@@ -382,3 +382,4 @@ export const musicians: Musician[] = [
   }
 
 ]
+
