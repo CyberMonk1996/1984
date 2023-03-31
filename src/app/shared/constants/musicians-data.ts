@@ -1,32 +1,24 @@
-import { Musician } from "../models/musicians.model"
+import { Musician } from "../models/musicians.model";
 export const musicians: Musician[] = [
   {
     name: "Daniel Adikashvili",
     photo: "https://files.fm/thumb_show.php?i=27unb7jz9",
     age: 29,
     instrument: "Drums, Founder of 1984",
-    biography: ` Daniel Adikashvili
-    Drummer, Composer
-    Born in 18/06/1993
-
-    Bachelor of jazz department in Ilia University
-    Former student of The New School of jazz, New York
-
-    Past member of several famous Georgian rock, pop and fusion bands
-
-    Author of 3 EP albums with Nika Gabadze, Luka Topuria
-    Giorgi Samsonadze and others ...
-
-    Founder of Jazz Club 1984 in 2021 november.
-
+    biography: ` Daniel is the Guy here. He is the founder, the one who came up with the Idea of 1984. Music has been his friend since the dawn of the days.
+    The instrument of his choice are the Drums, the grounding sound for Jazz music. If one considers the music as an experience, the drums are the ground, or foundation
+    for what's happening in front of you. Daniel has studied Jazz in Ilia State University and his way take a huge experience in The New School of Jazz, New York.
+    Daniel has taken part in several formations, ranging wide spectrum of Music Genres from Rock, Pop and Fusion.  Daniel has authored 3 EP Albums with Nika Gabadze, Luka Topiria,
+    Giorgi Samsonadze and others...  after a long journey into the depths of Music, or Universe, Daniel has decided to found his own club, which he named after his favorite book,
+    1984. He is the founder and ground for our club.
     `,
-    youtubeLinks: ["MgxWPU6ojnM","ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",],
+    youtubeLinks: ["MgxWPU6ojnM", "JjgM6Wconho" ,"ocInivmEGys", "P3d-Hyl3M-E", "FOPxAlg5NFw", "MPWZIDNaNVA", "h5m3hZudbII", "xajObCMhdN4",],
         socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
-      youtube: "https://www.youtube.com/@resonicart",
-      instagram: "https://www.instagram.com/reso.kiknadze/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
-      mail: "resomusic@gmail.com",
+      facebook: "https://www.facebook.com/daniel.adikashvili",
+      youtube: "https://www.youtube.com/@danieladikashvili3039",
+      instagram: "https://www.instagram.com/danieladikashvili/",
+      spotify: "https://open.spotify.com/artist/1nfIraFMmPTcsecu3BOacj",
+      mail: "Dani.adika93@gmail.com",
     }
 
   },
@@ -50,7 +42,11 @@ export const musicians: Musician[] = [
     Currently: Professor for electroacoustic and experimental Music at the Ilia State University in Tbilisi, Georgia (since 2008); teacher at the Tbilisi State Conservatoire (since 2011); performing all over the world both as saxophone-player and computer musician in various formations of jazz, contemporary music, free improvisation; composer and coauthor of many projects with dance, visual arts, poetry, theatre, cinema; lectures and master classes in electroacoustic music, composition, improvisation, jazz.
 
     `,
-    youtubeLinks: [""],
+    youtubeLinks: [
+      "rWaPle0GnnM",
+      "jL_4zivLjTg",
+      "WdOGsgmH5_U",
+    ],
         socialLinks: {
       facebook: "https://www.facebook.com/reso.kiknadze",
       youtube: "https://www.youtube.com/@resonicart",
@@ -87,10 +83,10 @@ export const musicians: Musician[] = [
         "yyl8zPWyKGc",
       ],
         socialLinks: {
-      facebook: "https://www.facebook.com/reso.kiknadze",
+      facebook: "https://www.facebook.com/luka.topuria.3",
       youtube: "https://www.youtube.com/@1984jazzclub",
       instagram: "https://www.instagram.com/lluka_topuria/",
-      spotify: "https://open.spotify.com/artist/4QzR0ODIhsML8v6P2kIA1I",
+      spotify: "https://open.spotify.com/artist/5ZPTOVVP7rrdIUqJlaVzyR",
       mail: "",
     }
   },
@@ -98,7 +94,7 @@ export const musicians: Musician[] = [
 
 
   {
-    name: "Irakli Kuku Choladze",
+    name: "Irakli Choladze",
     photo: "https://files.fm/thumb_show.php?i=wug5323qj",
     age: 34,
     instrument: "Drums",
@@ -109,6 +105,7 @@ export const musicians: Musician[] = [
     projects are: IRAKLI CHOLADZE TRIO (based in Hamburg),
     HULEMENT TRIO (based in Tbilisi, Georgia), and few solo projects.`,
     youtubeLinks: [
+      "VOotSrapFM0",
       "o3cC8LlZ_z8",
       "vF-TCCtnkbM",
       "sSk9TyWpCCw",
@@ -130,7 +127,7 @@ export const musicians: Musician[] = [
     age: 30,
     instrument: "Guitar",
     biography: ``,
-    youtubeLinks: ["o-Dtqlp25s4", "0CWoFJX4iIY", ],
+    youtubeLinks: ["N8HI3_5lxh0","o-Dtqlp25s4", "0CWoFJX4iIY", ],
         socialLinks: {
       facebook: "https://www.facebook.com/nika.gabadze",
       youtube: "",
@@ -214,6 +211,23 @@ export const musicians: Musician[] = [
       mail: "",
     }
   },
+  {
+    name: "Tornike Abuladze",
+    photo: "https://files.fm/thumb_show.php?i=j5fcvh5bf",
+    age: 30,
+    instrument: "Tenor Sax",
+    biography: ``,
+    youtubeLinks: [
+      "ML6zboVgmHI",
+    ],
+        socialLinks: {
+      facebook: "https://www.facebook.com/tokoabuladze",
+      youtube: "",
+      instagram: "https://www.instagram.com/tornikeabuladze_/",
+      spotify: "",
+      mail: "",
+    }
+  },
 
   {
     name: "Giorgi Samsonadze",
@@ -235,6 +249,7 @@ export const musicians: Musician[] = [
       Is a lecturer in Tbilisi State Conservatoire Jazz School (2011 - till today).
     `,
     youtubeLinks: [
+      "Jvm58RSXtvo",
       "ci5QbU5ZC30",
       "ljH84AbWOIE",
       "G0hZyeQjBHM",
@@ -294,7 +309,9 @@ export const musicians: Musician[] = [
     instrument: "Guitar",
     biography: ``,
     youtubeLinks: [
+      "SHWteRZYWrE",
       "42TiW_RZ_XQ",
+      "JUZjGGA2QTM",
       "JUZjGGA2QTM",
       "uwwmlGz0IA8",
       "_Va47KdvG-o",
@@ -337,6 +354,7 @@ export const musicians: Musician[] = [
     instrument: "Guitar",
     biography: ``,
     youtubeLinks: [
+      "Ij0NDEZaagY",
       "Zu5Di5ezZJk",
       "u4hBrq9qudY",
       "qhvoG6nQG9M",
@@ -351,8 +369,44 @@ export const musicians: Musician[] = [
     }
   },
   {
+    name: "Ucha Metreveli",
+    photo: "https://files.fm/thumb_show.php?i=bs82kss54",
+    age: 35,
+    instrument: "Guitar",
+    biography: ``,
+    youtubeLinks: [
+      "Y2cdP4LQNOk",
+
+    ],
+    socialLinks: {
+      facebook: "",
+      youtube: "",
+      instagram: "https://www.instagram.com/ucha_metreveli/",
+      spotify: "",
+      mail: "",
+    }
+  },
+  {
+    name: "Levan Lortkipanidze",
+    photo: "https://files.fm/thumb_show.php?i=9qd8andsz",
+    age: 35,
+    instrument: "Guitar",
+    biography: ``,
+    youtubeLinks: [
+      "Y2cdP4LQNOk",
+
+    ],
+    socialLinks: {
+      facebook: "https://www.facebook.com/levan.lortkipanidze.731",
+      youtube: "",
+      instagram: "",
+      spotify: "",
+      mail: "",
+    }
+  },
+  {
     name: "Noe Gabashvili",
-    photo: "https://files.fm/thumb_show.php?i=vv9jfb3p7",
+    photo: "https://files.fm/thumb_show.php?i=ufd2cx4rn",
     age: 22,
     instrument: "Bass",
     biography: ``,

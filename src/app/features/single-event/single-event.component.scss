@@ -3,14 +3,21 @@
 }
 // 02383C
 .background {
-  background-image: url('../../../assets/images/MJbackground.png');
-  background-repeat: repeat;
+  background-image: url('https://files.fm/thumb_show.php?i=jyxyfj9qw');
+  background-size: 100vh;
   object-fit: cover;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 767px) {
   .background {
-    background-image: url('../../../assets/images/background.PNG');
+    background-image: url('https://files.fm/thumb_show.php?i=trgtpaucn');
     background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
   }
+}
+
+.margin_top_34 {
+  margin-top: 34px;
 }

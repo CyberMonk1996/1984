@@ -5,6 +5,7 @@
   width: 100%;
   font-family: "lato", serif;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -13,10 +14,9 @@
   padding-right: 20px;
 }
 
-.brand {
-  font-family: "lato", sans-serif;
+.custom-font {
+  font-family: 'comic', "mochy";
 }
-
 li {
   list-style: none;
 }
@@ -32,6 +32,7 @@ a {
 }
 
 .hamburger {
+  position: absolute;
   display: none;
   cursor: pointer;
 }
@@ -53,6 +54,7 @@ a {
 
 @media(max-width: 768px) {
   .hamburger {
+    position: relative;
     display: block;
   }
 
@@ -70,25 +72,17 @@ a {
     display: flex;
     align-items: center;
     margin-top: -27px;
-  }
-
-  .links-and-icon{
     position: fixed;
     align-items: center;
     top: -70px;
     transition: 0.8s;
   }
 
-  @media (min-width: 768px) {
-    /* CSS rules for screens 768px or less */
-    .links-and-icon {
-      position: absolute;
-      margin-left: 10vw;
-      background-color: rgba(0,0,0, 0.8);
-      width: 90vw;
+  .links-and-icon{
 
-    }
   }
+
+
 
   .nav-item {
     margin: 16px 0;
@@ -102,9 +96,19 @@ a {
     display: none;
   }
 
+  .width {
+    width: 100vw;
+    margin-top: 5px;
+  }
+
 }
 
-.width {
-  width: 100vw;
-  margin-top: 4px;
+
+
+@media (min-width: 768px) {
+  /* CSS rules for screens 768px or less */
+  .links-and-icon {
+    width: max-content;
+
+  }
 }

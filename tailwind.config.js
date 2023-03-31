@@ -32,6 +32,13 @@ module.exports = {
         '440': '440px',
         "100": "100vw",
       },
+      height: {
+
+      },
+      spacing: {
+        "34": "34px",
+        "65": "64px",
+      }
     },
     extend: {
       scale: {
@@ -70,13 +77,14 @@ module.exports = {
       },
       colors: {
         darkBlack: "rgba(0, 0, 0, 0.95)",
-        lightBlack: "rgba(0,0,0, 0.8)",
+        lightBlack: "rgba(0,0,0, 0.4)",
         saturatedBlack: "rgb(33, 18, 18)",
+        grayishBlue: "#44477a",
         red1984: "rgba(212,36,41,255)",
         darkRed: "#801336",
         textColor: "rgba(252,252,252,255)",
         darkGreen: "#02383C",
-        thirdColor: "rgba(255, 0, 0, 0.6)",
+        thirdColor: "rgba(255, 0, 0, 0.4)",
         veryLighCyan: "#EBFFFB",
         veryLightBrown: "#FEE9D7",
         youtube: "#FF0000",

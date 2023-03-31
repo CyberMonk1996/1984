@@ -12,8 +12,8 @@
       ">
     </div>
     <div
-      class="min-h-[560px] relative w-[90%] md:w-[95%] mx-auto my-6 py-5 rounded-xl bg-darkBlack hover:scale-101
-        hover:translate-x-5 hover:shadow-md hover:shadow-darkGreen duration-400 cursor-pointer"
+      class="min-h-[560px] relative w-[90%] md:w-[95%] mx-auto my-6 py-5 rounded-xl bg-darkBlack hover:scale-105
+         hover:duration-500 hover:translate-x-3 hover:shadow-md cursor-pointer"
       routerLink="{{changeSpaceInLink(musician.name)}}"
       (click)="changeSpaceInLink(musician.name)"
       >
@@ -25,8 +25,8 @@
         (load)="load(photo)"
       >
       <div class="info text-white mt-3 ml-4">
-        <h1 class="text-3xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
-        <h1 class="text-xl group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
+        <h1 class="text-xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
+        <h1 class="text-base group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
       </div>
     </div>
 

@@ -3,14 +3,9 @@
   <!-- Cards -->
   <div
     *ngFor="let band of bandData"
-    class=" relative w-[90%] h-64 mx-auto my-4 border-2 border-red1984 rounded-lg"
+    class=" relative w-[90%] h-64 mx-auto my-4 border border-darkGreen rounded-lg"
     style="box-shadow: 5px 4px 7px 2px black;"
   >
-  <!-- <div
-    *ngFor="let band of bandData"
-    class=" relative w-full h-64 mx-auto my-4 "
-    style="box-shadow: 5px 4px 7px 2px rgba(0,0,0, 0.8);"
-  > -->
     <img
       class="w-full h-full rounded-lg"
       [src]="band.imageSrc"

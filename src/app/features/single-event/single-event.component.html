@@ -1,5 +1,5 @@
-<div class="min-h-screen -mt-28 pt-28 pb-10 background md:bg-darkGreen">
-  <div class=" flex flex-col md:flex-row w-[90%] mt-28 pb-10 md:mt-36 py-8 mx-auto bg-lightBlack rounded-lg">
+<div class="min-h-screen mt-65 pt-11 pb-10 md:bg-darkGreen background">
+  <div class=" flex flex-col md:flex-row w-[90%] margin_top_34 pb-10 py-8 mx-auto bg-lightBlack rounded-lg">
     <!-- Left Side -->
     <div class="flex flex-col w-[90%] md:w-[30%] mx-auto md:ml-5 ">
       <img
@@ -10,13 +10,31 @@
       <h1 class="md:hidden my-5 text-3xl text-center text-white text-shadow">{{event.bandName}} </h1>
       <!-- Event Info Here -->
       <div class="text-veryLighCyan flex flex-col gap-4 ">
-        <h1><span class="text-2xl text-shadow">{{event.eventDay}}:</span> 9:00 P.M - 11:30 P.M.</h1>
-        <h1><span class="text-2xl text-shadow">Tbilisi:</span> Anton Katalikosi st. 26 </h1>
-          <h1><span class="text-2xl text-shadow">Ticket Price:</span> 20GEL</h1>
-          <h4 class="text-xs -mt-2 md:text-base">(Price might change on special events)</h4>
-          <h1 class="mt-6 text-xl text-shadow">To book a table, reach out on:</h1>
-          <div class="flex md:flex-col">
-            <a class=" md:text-lg text-shadow mr-6 pt-2" href="tel: +995 571 23 98 18">+995 558 28 81 93</a>
+        <div class="flex justify-between items-center md:w-[87%] w-full">
+          <span class="text-base md:text-xl text-shadow">{{event.eventDay}}:</span>
+          <span class="text-base md:text-xl text-shadow">9:00 P.M - 11:30 P.M</span>
+        </div>
+        <div class="flex justify-between items-center md:w-[87%] w-full">
+          <span class="text-base md:text-xl text-shadow">Tbilisi:</span>
+          <a
+            href="https://www.google.com/maps/place/26+%E1%83%90%E1%83%9C%E1%83%A2%E1%83%9D%E1%83%9C+%E1%83%99%E1%83%90%E1%83%97%E1%83%90%E1%83%9A%E1%83%98%E1%83%99%E1%83%9D%E1%83%A1%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90,+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98/@41.6933675,44.8031776,17z/data=!3m1!4b1!4m6!3m5!1s0x40440cf0022c487b:0x4bc6f6a83e8d78c0!8m2!3d41.6933675!4d44.8053663!16s%2Fg%2F11spdcwvsr"
+            target="_blank"
+            class="cursor-pointer "
+            >
+            <span class="hover:scale-105 text-base md:text-xl text-shadow">Anton Katalikosi st. 26</span> </a>
+        </div>
+        <div class="flex justify-between items-center md:w-[87%] w-full">
+          <span class="text-base md:text-xl text-shadow">Ticket Price:</span>
+          <span class="text-base md:text-xl">20GEL</span>
+        </div>
+          <h4 class="text-xs -mt-2 md:text-sm">(Price might change on special events)</h4>
+          <a
+          href="https://www.google.com/maps/place/26+%E1%83%90%E1%83%9C%E1%83%A2%E1%83%9D%E1%83%9C+%E1%83%99%E1%83%90%E1%83%97%E1%83%90%E1%83%9A%E1%83%98%E1%83%99%E1%83%9D%E1%83%A1%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90,+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98/@41.6933675,44.8031776,17z/data=!3m1!4b1!4m6!3m5!1s0x40440cf0022c487b:0x4bc6f6a83e8d78c0!8m2!3d41.6933675!4d44.8053663!16s%2Fg%2F11spdcwvsr"
+          ><span class="text-base md:text-xl text-shadow">To book a table, reach out on:</span></a>
+          <div class="flex flex-col md:-mt-5 -mt-3">
+            <div class="w-full">
+              <a class=" text-base md:text-xl text-shadow mr-6 pt-2 " href="tel: +995 571 23 98 18">+995 558 28 81 93</a>
+            </div>
             <div class="flex flex-row">
               <a href="http://m.me/1984Jazz" target="_blank" class="mr-4 mt-2">
                 <svg
@@ -68,7 +86,7 @@
             (load)="load(photo)"
           >
           <div class="info text-white mt-3 ml-4">
-            <h1 class="text-17 md:xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
+            <h1 class="text-17 md:xl group-hover:text-darkRed group-hover:scale-101 duration-1000">{{musician.name}} </h1>
             <h1 class="text-13 md:text-lg group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
           </div>
         </div>
