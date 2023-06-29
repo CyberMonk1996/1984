@@ -8,6 +8,8 @@ import { NavbarComponent } from './features/navbar/navbar.component';
 import { ComponentsModule } from './shared/components/components.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { interceptor } from './shared/interceptors/http-interceptor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { interceptor } from './shared/interceptors/http-interceptor';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    BrowserAnimationsModule,
+    LazyLoadImageModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

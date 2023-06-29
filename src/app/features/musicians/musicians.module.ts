@@ -5,6 +5,7 @@ import { MusiciansComponent } from '../musicians/musicians.component';
 import { MusiciansRoutingModule } from './musicians-routing.module';
 import { PersonalPageComponent } from './personal-page/personal-page.component';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 
@@ -13,10 +14,9 @@ import { ComponentsModule } from 'src/app/shared/components/components.module';
     MusiciansMainComponent,
     MusiciansComponent,
     PersonalPageComponent,
-
   ],
   imports: [
-    CommonModule, MusiciansRoutingModule, ComponentsModule
+    CommonModule, MusiciansRoutingModule, ComponentsModule, LazyLoadImageModule
   ],
 
 })

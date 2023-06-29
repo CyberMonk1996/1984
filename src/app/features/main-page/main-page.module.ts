@@ -6,6 +6,7 @@ import { MainPageRoutingModule } from './main-page-routing.module';
 import { FooterComponent } from '../footer/footer.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { LargeComponent } from './large/large.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 @NgModule({
@@ -13,7 +14,7 @@ import { LargeComponent } from './large/large.component';
      SliderComponent, MainPageComponent, MobileComponent, LargeComponent,
   ],
   imports: [
-    CommonModule, MainPageRoutingModule
+    CommonModule, MainPageRoutingModule, LazyLoadImageModule
   ],
   exports: [
 

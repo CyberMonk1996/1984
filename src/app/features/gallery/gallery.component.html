@@ -1,0 +1,14 @@
+<div class="h-full min-h-[90vh] background py-11 px-3 md:px-48">
+  <!-- main content here  -->
+  <div class="w-full flex justify-center gap-10 mt-4">
+    <div routerLink="images" class="w-28 h-10 flex justify-center items-center cursor-pointer rounded-md bg-lightBlack">
+      <span class="text-xl text-white text-shadow">Images</span>
+    </div>
+    <div routerLink="videos" class="w-28 h-10 flex justify-center items-center cursor-pointer rounded-md bg-lightBlack">
+      <span class="text-xl text-white text-shadow">Videos</span>
+    </div>
+  </div>
+  <div class="flex justify-center mt-4" [@routeAnimation]="getRouteAnimationState()">
+    <router-outlet></router-outlet>
+  </div>
+</div>

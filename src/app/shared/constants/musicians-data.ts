@@ -77,6 +77,7 @@ export const musicians: Musician[] = [
 
     `,
       youtubeLinks: [
+        "x3wnMBT6azM",
         "_ZXB7zKGzWc",
         "DfoEMVKVZHM",
         "4EposNjHr8A",
@@ -165,7 +166,7 @@ export const musicians: Musician[] = [
       "cl-QqW79HLc",
     ],
         socialLinks: {
-      facebook: "https://www.facebook.com/egor.popov.944",
+      facebook: "https://www.facebook.com/kemojazz",
       youtube: "https://www.youtube.com/@afrasion22",
       instagram: "https://www.instagram.com/kemo_musician/",
       spotify: "https://open.spotify.com/artist/6DNdjzAZWGvVkWiK3uTKSH",
@@ -179,10 +180,8 @@ export const musicians: Musician[] = [
     instrument: "Trumpet",
     biography: ``,
     youtubeLinks: [
-      // "jbnK0hNevlI",
-      // "lDJuwRPNdIA",
-      // "xj5IyLBS9mQ",
-      // "cl-QqW79HLc",
+      "h_jGoXzf-Mo",
+      "cRieUIipwBg",
     ],
         socialLinks: {
       facebook: "https://www.facebook.com/egor.popov.944",
@@ -249,6 +248,7 @@ export const musicians: Musician[] = [
       Is a lecturer in Tbilisi State Conservatoire Jazz School (2011 - till today).
     `,
     youtubeLinks: [
+      "5m0joBm4mTU",
       "Jvm58RSXtvo",
       "ci5QbU5ZC30",
       "ljH84AbWOIE",
@@ -269,6 +269,7 @@ export const musicians: Musician[] = [
     instrument: "Piano",
     biography: ``,
     youtubeLinks: [
+      "AqhKE-a3YGE",
       "ci5QbU5ZC30",
       "ljH84AbWOIE",
       "G0hZyeQjBHM",
@@ -289,6 +290,8 @@ export const musicians: Musician[] = [
     biography: `Internationally renowned Georgian-American drummer, percussionist,  composer, arranger, songwriter, bandleader and clinician, Bosphorus Cymbals Artist.
     More than 30 years of professional experience as a freelance drummer/percussionist, diverse in a wide variety of styles. Performed and recorded with top world class musicians of all generations such as Lionel Loueke, Mark Helias, Esperanza Spalding, Mino Cinelu (Miles Davis, Sting, Weather Report) Wayne Escoffery, Duane Eubanks, Dom Salvador, Leo Genovese, Nilson Matta, Avishai Cohen, Perry Robinson, Raul Midon, Freddy Bryant, Essiet Essiet (Art Blakey), Cheryl Bentyne (Manhattan Transfer), Jesse Murphy (Brazilian Girls), Keith Carlock (Sting, Steely Dan), Badal Roy (Miles Davis 1970-1973),Valeri Ponomarev (Art Blakey), John Ellis, Victor Prieto , Edsel Gomez, and many others. Performances in the USA at landmark venues such as Carnegie Hall, Blue Note, World Café Live, Iridium, Smoke, Jazz Standard, Jazz At Kitano, The Deer Head In , and most others.  US Citizen naturalized under the  ‘Extraordinary Ability  In the Arts’ category status granted in 2007 by the U.S. Government. Since performance as a leader of the George Mel  Quartet at the Tbilisi International Jazz  Festival  2014, George Mel  is based in Tbilisi , Georgia and is doing concert and studio work with major Georgian artists , teaching at the Jazz Department of the Tbilisi State Conservatory ,as well as doing clinics, workshops, master classes and concert  tours  internationally both as a sideman, as well as  a leader of his own original projects.`,
     youtubeLinks: [
+      "3SJYfX0A7zI",
+      "61Iee6_yUKk",
       "CbEFW0Im4z8",
       "k4WZKd873K0",
       "woOna1JCXJE",

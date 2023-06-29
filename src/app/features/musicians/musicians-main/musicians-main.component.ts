@@ -22,7 +22,7 @@ export class MusiciansMainComponent implements OnInit {
   }
 
   load(photo: HTMLImageElement) {
-    this.renderer.setStyle(photo, "width", "90%");
+    this.renderer.setStyle(photo, "width", "96%");
     this.renderer.setStyle(photo, "height", "500px");
   }
 }

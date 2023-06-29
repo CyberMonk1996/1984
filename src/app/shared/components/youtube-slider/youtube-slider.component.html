@@ -1,10 +1,12 @@
-<div class="" *ngIf="youtubeLinks && youtubeLinks.length > 0">
-  <div class="relative carousel-container flex justify-center w-[60%] md:h-96 mr-7 rounded-xl">
+<div class="" *ngIf="(youtubeLinks && youtubeLinks.length > 0) || singleLink">
+  <div
+    class="relative w-full h-full  carousel-container flex justify-center rounded-xl">
 
-    <iframe class="w-full h-full" [src]="'https://www.youtube.com/embed/'+ youtubeLinks[selectedIndex] | safe" frameborder="0" allowfullscreen></iframe>
+    <iframe *ngIf="youtubeLinks && youtubeLinks.length > 0" class="w-full h-full md:min-h-[550px]" [src]="'https://www.youtube.com/embed/'+ youtubeLinks[selectedIndex] | safe" frameborder="0" allowfullscreen></iframe>
+    <iframe *ngIf="singleLink" class="w-full h-full" [src]="'https://www.youtube.com/embed/'+ singleLink | safe" frameborder="0" allowfullscreen></iframe>
 
 
-    <button class="btn-carousel btn-prev" (click)="onPrevClick()">
+    <button *ngIf="!singleLink" class="btn-carousel btn-prev" (click)="onPrevClick()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
 
@@ -15,7 +17,7 @@
       </svg>
     </button>
 
-    <button class="btn-carousel btn-next" (click)="onNextClick()">
+    <button *ngIf="!singleLink" class="btn-carousel btn-next" (click)="onNextClick()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

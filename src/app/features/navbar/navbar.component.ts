@@ -15,7 +15,9 @@ export class NavbarComponent implements OnInit {
   }
   smallScreen!: boolean;
 
-  constructor() { }
+  constructor(
+    
+  ) { }
 
   ngOnInit(): void {
     this.checkDevice()

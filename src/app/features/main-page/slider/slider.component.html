@@ -1,18 +1,19 @@
 <div *ngIf="bandData && bandData.length > 0">
   <div  *ngFor="let band of bandData; let i = index" class="carousel-container">
+
+    <!-- [src]="band.imageSrc" -->
     <img
-      [src]="band.imageSrc"
       [alt]="band.imageAlt"
       [ngClass]="{'image-active' : selectedIndex === i}"
       class="object-center w-full h-full"
+      [lazyLoad]="band.imageSrc"
       />
+    <div class="absolute w-[100%] top-48 text-white flex flex-col items-center ">
+      <h1 class="text-5xl  mx-auto text-shadow">{{ band.eventDay}} </h1>
 
-    <div class="absolute w-[100%] top-40 text-white flex flex-col items-center ">
-      <!-- <h1 class="text-5xl my-10 mx-auto text-shadow">{{ band.eventDay}} </h1>
+        <h1 class="text-4xl md:my-8 md:text-6xl my-10 text-shadow ">{{ band.bandName }}</h1>
 
-        <h1 class="text-4xl md:my-28 md:text-6xl my-10 text-shadow ">{{ band.bandName }}</h1> -->
-
-      <div class="absolute md:top-64 mx-auto">
+      <div class="mt-20 mx-auto">
         <button
           [routerLink]="['/events', band.eventDay]"
           class=" z-10 w-[200px] h-16 text-white bg-transparent border-2 rounded-lg

@@ -1,0 +1,23 @@
+@media only screen and (max-width: 767px) {
+  .background {
+    background-image: url('https://files.fm/thumb_show.php?i=jyxyfj9qw');
+    background-size: 100vh;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .larger-photo {
+    width: 700px;
+  }
+  .background {
+    background-image: url('https://files.fm/thumb_show.php?i=trgtpaucn');
+    background-size: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.text-shadow {
+  text-shadow: 4px 3px rgba(0,0,0,0.9);
+}

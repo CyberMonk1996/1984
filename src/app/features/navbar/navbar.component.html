@@ -9,7 +9,10 @@
               (click)="hamburger()"
               routerLink=""
               class="text-0.97 hover:text-red1984 duration-300"
-              routerLinkActive="border-b-2 border-red1984  rounded-md text-red1984 text-shadow ">Home</a>
+              routerLinkActive="border-b-2 border-red1984  rounded-md text-red1984 text-shadow "
+              [routerLinkActiveOptions]="{ exact: true }">
+              Home
+            </a>
           </li>
           <li class="nav-item">
             <a
@@ -24,6 +27,13 @@
               routerLink="about"
               class="text-0.97 hover:text-red1984 duration-300"
               routerLinkActive="border-b-2 border-red1984  rounded-md text-red-700 text-shadow ">About</a>
+          </li>
+          <li class="nav-item">
+            <a
+              (click)="hamburger()"
+              routerLink="gallery/images"
+              class="text-0.97 hover:text-red1984 duration-300"
+              routerLinkActive="border-b-2 border-red1984  rounded-md text-red-700 text-shadow ">Gallery</a>
           </li>
         </ul>
 

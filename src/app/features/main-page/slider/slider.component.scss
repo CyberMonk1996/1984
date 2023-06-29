@@ -13,6 +13,7 @@
   display: none;
   height: 100vh;
   animation: expand 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  perspective: 1000px;
   object-fit: cover;
   opacity: 0.9;
 }
@@ -35,6 +36,7 @@
     opacity: 1;
   }
 }
+
 
 
 

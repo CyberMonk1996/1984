@@ -33,7 +33,7 @@ module.exports = {
         "100": "100vw",
       },
       height: {
-
+        "90": "90vh"
       },
       spacing: {
         "34": "34px",
@@ -77,7 +77,7 @@ module.exports = {
       },
       colors: {
         darkBlack: "rgba(0, 0, 0, 0.95)",
-        lightBlack: "rgba(0,0,0, 0.4)",
+        lightBlack: "rgba(0,0,0, 0.7)",
         saturatedBlack: "rgb(33, 18, 18)",
         grayishBlue: "#44477a",
         red1984: "rgba(212,36,41,255)",

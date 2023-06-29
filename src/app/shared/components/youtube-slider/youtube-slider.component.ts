@@ -1,13 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-youtube-slider',
   templateUrl: './youtube-slider.component.html',
-  styleUrls: ['./youtube-slider.component.scss']
+  styleUrls: ['./youtube-slider.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class YoutubeSliderComponent implements OnInit {
 
   @Input() youtubeLinks!: string[];
+  @Input() singleLink!: string;
+  @Input() videoPageCarousel: boolean = false;
   selectedIndex = 0;
 
   constructor() { }

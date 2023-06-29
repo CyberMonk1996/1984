@@ -1,0 +1,36 @@
+
+
+<div *ngIf="videoToShow | async as mainVideo" class=" w-[90vw] md:w-[70vw] h-max min-h-[80vh] py-3 bg-lightBlack rounded-lg">
+  <div  class="w-[90%] h-[200px] md:h-[55vh] mx-auto flex justify-center rounded-md">
+    <app-youtube-slider *ngIf="videoToShow" class="w-full md:h-full youtube rounded-lg" [singleLink]="mainVideo"></app-youtube-slider>
+  </div>
+  <div class=" px-8 overflow-x-hidden mt-4 grid grid-cols-2 md:flex md:flex-row gap-3 m items-center justify-center">
+    <div *ngIf="page > 0" (click)="moveLeft()">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+
+      fill="currentColor"
+      class="bi bi-arrow-left w-6 md:w-12 h-6 md:h-12 text-white  hover:scale-110 duration-300"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+    </svg>
+    </div>
+    <div class="" *ngFor="let video of videos; let i = index">
+      <img
+        class="w-[120px] md:h-[90px] rounded-lg"
+        [ngClass]="video.videoLink === mainVideo ? 'border border-white' : ''"
+        [src]="video.imageLink" alt=""
+        (click)="changeVideo(i)"
+        >
+    </div>
+    <div *ngIf="calculateMoveRight()" (click)="moveRight()">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      class="bi bi-arrow-right text-white w-6 md:w-12 h-6 md:h-12  hover:scale-110 duration-300"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
+    </div>
+  </div>
+</div>
