@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { images } from 'src/app/shared/constants/images';
 import { BehaviorSubject } from 'rxjs';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-images',
@@ -12,6 +13,30 @@ export class ImagesComponent implements OnInit {
   imageToShow: BehaviorSubject<string> = new BehaviorSubject(images[0]);
   activeImage: string = "";
   page: number = 0;
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    const currentIndex = this.images.indexOf(this.imageToShow.value);
+    if (event.key === 'ArrowRight') {
+      const nextIndex = currentIndex + 1;
+      if (nextIndex < this.images.length) {
+        this.imageToShow.next(this.images[nextIndex]);
+      }
+      if(currentIndex === 5) {
+        this.moveRight();
+      }
+    }
+    if (event.key === 'ArrowLeft') {
+      const nextIndex = currentIndex - 1;
+      if (nextIndex >= 0) {
+        this.imageToShow.next(this.images[nextIndex]);
+      }
+      if(currentIndex === 0) {
+        this.moveLeft();
+      }
+    }
+
+  }
   constructor() { }
 
   ngOnInit(): void {
@@ -25,7 +50,7 @@ export class ImagesComponent implements OnInit {
     }
   }
 
-  changeImage(id: number) {
+  changeImageClick(id: number) {
     this.imageToShow.next(this.images[id]);
   }
 
@@ -40,9 +65,11 @@ export class ImagesComponent implements OnInit {
   }
 
   calculateMoveRight() {
-    if (this.page > Math.ceil(this.images.length / 6)) {
+    const pagesToDisplay = Math.floor(images.length / 6);
+    if(pagesToDisplay === this.page) {
       return false;
-    } else return true;
+    }
+    return true;
   }
 
 }

@@ -7,11 +7,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { LargeComponent } from './large/large.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { DataTextDirective } from './slider/data-text.directive.ts.directive';
 
 
 @NgModule({
   declarations: [
-     SliderComponent, MainPageComponent, MobileComponent, LargeComponent,
+     SliderComponent, MainPageComponent, MobileComponent, LargeComponent, DataTextDirective
   ],
   imports: [
     CommonModule, MainPageRoutingModule, LazyLoadImageModule

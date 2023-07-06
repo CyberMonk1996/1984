@@ -1,22 +1,22 @@
 <div *ngIf="bandData && bandData.length > 0">
-  <div  *ngFor="let band of bandData; let i = index" class="carousel-container">
+  <div *ngFor="let band of bandData; let i = index" class="carousel-container">
 
     <!-- [src]="band.imageSrc" -->
-    <img
-      [alt]="band.imageAlt"
-      [ngClass]="{'image-active' : selectedIndex === i}"
-      class="object-center w-full h-full"
-      [lazyLoad]="band.imageSrc"
-      />
+    <img [alt]="band.imageAlt" [ngClass]="{'image-active' : selectedIndex === i}" class="object-center w-full h-full"
+      [lazyLoad]="band.imageSrc" />
     <div class="absolute w-[100%] top-48 text-white flex flex-col items-center ">
-      <h1 class="text-5xl  mx-auto text-shadow">{{ band.eventDay}} </h1>
+      <h1 class="glitch mx-auto text-shadow" [data-text]="band.eventDay">
+        {{ band.eventDay}}
+      </h1>
 
-        <h1 class="text-4xl md:my-8 md:text-6xl my-10 text-shadow ">{{ band.bandName }}</h1>
+      <h1 class="glitch text-shadow my-8" [data-text]="band.bandName">
+        {{ band.bandName }}
+      </h1>
 
       <div class="mt-20 mx-auto">
         <button
           [routerLink]="['/events', band.eventDay]"
-          class=" z-10 w-[200px] h-16 text-white bg-transparent border-2 rounded-lg
+          class=" z-10 w-[200px] h-16 mt-[10vh] text-white bg-transparent border-2 rounded-lg
             text-2xl font-semibold cursor-pointer hover:scale-110 duration-500 ease-out
             shadow-lg hover:shadow-xl"
             style="box-shadow: 5px 4px 7px 2px black;"
@@ -28,33 +28,25 @@
     </div>
 
     <button class="btn-carousel btn-prev" (click)="onPrevClick()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-
-        fill="currentColor"
-        class="bi bi-arrow-left text-white h-14 w-14 hover:scale-110 duration-300"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+        class="bi bi-arrow-left text-white h-14 w-14 hover:scale-110 duration-300" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
       </svg>
     </button>
 
     <button class="btn-carousel btn-next" (click)="onNextClick()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        class="bi bi-arrow-right text-white h-14 w-14 hover:scale-110 duration-300"
-        viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+        class="bi bi-arrow-right text-white h-14 w-14 hover:scale-110 duration-300" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
       </svg>
     </button>
     <div class="carousel-dot-container">
-      <span
-        *ngFor="let dot of bandData; let i = index"
-        class="dot"
-        [ngClass]="{'active' : selectedIndex === i}"
-        (click)="selectImage(i)"
-        ></span>
-      </div>
+      <span *ngFor="let dot of bandData; let i = index" class="dot" [ngClass]="{'active' : selectedIndex === i}"
+        (click)="selectImage(i)"></span>
+    </div>
   </div>
 </div>
+
 

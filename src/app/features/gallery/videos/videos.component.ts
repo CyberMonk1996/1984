@@ -13,6 +13,7 @@ export class VideosComponent implements OnInit {
   videoToShow: BehaviorSubject<string> = new BehaviorSubject(videos[0].videoLink);
   activeVideo: string = "";
   page: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
