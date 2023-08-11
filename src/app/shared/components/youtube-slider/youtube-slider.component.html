@@ -2,7 +2,7 @@
   <div
     class="relative w-full h-full  carousel-container flex justify-center rounded-xl">
 
-    <iframe *ngIf="youtubeLinks && youtubeLinks.length > 0" class="w-full h-full md:min-h-[550px]" [src]="'https://www.youtube.com/embed/'+ youtubeLinks[selectedIndex] | safe" frameborder="0" allowfullscreen></iframe>
+    <iframe *ngIf="youtubeLinks && youtubeLinks.length > 0" class="w-full h-full md:min-h-[450px]" [src]="'https://www.youtube.com/embed/'+ youtubeLinks[selectedIndex] | safe" frameborder="0" allowfullscreen></iframe>
     <iframe *ngIf="singleLink" class="w-full h-full" [src]="'https://www.youtube.com/embed/'+ singleLink | safe" frameborder="0" allowfullscreen></iframe>
 
 
