@@ -1,7 +1,6 @@
-
 @media only screen and (max-width: 767px) {
   .background {
-    background-image: url('https://files.fm/thumb_show.php?i=trgtpaucn');
+    background-image: url('../../../assets/images/gilgamesh-enkidu-bull.jpg');
     background-size: 100vh;
   }
 }
@@ -10,21 +9,11 @@
     width: 700px;
   }
   .background {
-    background-image: url('https://files.fm/thumb_show.php?i=jyxyfj9qw');
+    background-image: url('../../../assets/images/odisseus-boat-fairies.webp');
     background-size: 100%;
     object-fit: cover;
     background-attachment: fixed;
     min-height: 100vh;
     overflow-x: hidden;
   }
-}
-
-.text-shadow {
-  text-shadow: 4px 3px rgba(0,0,0,0.9);
-}
-
-.custom-font {
-  font-family: 'comic', "mochy";
-  font-size: 42px;
-  margin-top: 3px;
 }

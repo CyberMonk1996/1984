@@ -23,6 +23,6 @@ export class MusiciansMainComponent implements OnInit {
 
   load(photo: HTMLImageElement) {
     this.renderer.setStyle(photo, "width", "96%");
-    this.renderer.setStyle(photo, "height", "500px");
+    this.renderer.setStyle(photo, "height", "72vh");
   }
 }

@@ -78,18 +78,13 @@ a {
     transition: 0.8s;
   }
 
-  .links-and-icon{
-
-  }
-
-
-
   .nav-item {
     margin: 16px 0;
   }
 
   .links-and-icon.active {
-    top: 65px;
+    width: 100%;
+    top: 70px;
   }
 
   .social-icons {

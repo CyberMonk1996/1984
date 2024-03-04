@@ -209,9 +209,54 @@ polyline {
 
 
 
+
+
+.button_see {
+  $btn-color: red;
+  $btn-color-dark: shade($btn-color, 40%);
+  color: tint($btn-color);
+
+  &:before,
+  &:after,
+  span:before,
+  span:after {
+    content: '';
+    // @include absolute(0,null,null,0);
+    // @include size(0, $btn-height);
+    background-color: rgba(red, 0.25);
+    transition: 0.4s;
+  }
+
+  &:after,
+  span:before {
+    left: auto;
+    right: 0;
+  }
+
+  span:before,
+  span:after {
+    transition-delay: 0.4s;
+  }
+
+  &:hover {
+    color: tint(red, 75%);
+
+    &:before,
+    &:after,
+    span:before,
+    span:after {
+      width: 200px;
+    }
+  }
+
+  &:active {
+    background-color: $btn-color;
+  }
+}
+
+
 .glitch{
   color:white;
-  font-size:  70px;
   position:relative;
   margin:0 auto;
 }
@@ -255,3 +300,32 @@ polyline {
   clip:rect(0,900px,0,0);
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
+
+// @keyframes criss-cross-left {
+//   0% {
+//     left: -20px;
+//   }
+//   50% {
+//     left: 50%;
+//     @include size(20px);
+//   }
+//   100% {
+//     left: 50%;
+//     @include size($btn-width*1.5);
+//   }
+// }
+
+// @keyframes criss-cross-right {
+//   0% {
+//     right: -20px;
+//   }
+//   50% {
+//     right: 50%;
+//     @include size(20px);
+//   }
+//   100% {
+//     right: 50%;
+//     @include size($btn-width*1.5);
+//   }
+// }
+

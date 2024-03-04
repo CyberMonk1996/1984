@@ -27,6 +27,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./features/gallery/gallery.module").then((mod) => mod.GalleryModule),
   },
+  {
+    path: "gilgamesh",
+    loadComponent: () =>
+      import("./features/gilgamesh/gilgamesh.component").then((comp) => comp.GilgameshComponent)
+  }
 ];
 
 @NgModule({

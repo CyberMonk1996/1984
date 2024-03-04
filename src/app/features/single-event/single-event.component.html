@@ -3,36 +3,39 @@
     <!-- Left Side -->
     <div class="flex flex-col w-[90%] md:w-[30%] mx-auto md:ml-5 ">
       <img
-      class="w-96 h-52 md:h-72 rounded-xl -mt-14 md:-mt-14 mb-6"
+      class="w-96 h-52 md:h-72 rounded-xl -mt-14 md:-mt-14"
       [src]="event.imageSrc"
       [alt]="event.imageAlt"
       />
-      <h1 class="md:hidden my-5 text-3xl text-center text-white text-shadow">{{event.bandName}} </h1>
+      <h1 class="md:hidden my-3 text-3xl text-center text-red1984 text-shadow">{{event.bandName}} </h1>
       <!-- Event Info Here -->
       <div class="text-veryLighCyan flex flex-col gap-4 ">
         <div class="flex justify-between items-center md:w-[87%] w-full">
-          <span class="text-base md:text-xl text-shadow">{{event.eventDay}}:</span>
-          <span class="text-base  text-shadow">9:00 P.M - 11:30 P.M</span>
+          <span class="text-sm md:text-xl text-shadow">{{event.eventDay}}:</span>
+          <span class="text-sm  text-shadow">9:00 P.M - 11:30 P.M</span>
         </div>
         <div class="flex justify-between items-center md:w-[87%] w-full">
-          <span class="text-base md:text-xl text-shadow">Tbilisi:</span>
+          <span class="text-sm md:text-xl text-shadow">Tbilisi:</span>
           <a
             href="https://www.google.com/maps/place/26+%E1%83%90%E1%83%9C%E1%83%A2%E1%83%9D%E1%83%9C+%E1%83%99%E1%83%90%E1%83%97%E1%83%90%E1%83%9A%E1%83%98%E1%83%99%E1%83%9D%E1%83%A1%E1%83%98%E1%83%A1+%E1%83%A5%E1%83%A3%E1%83%A9%E1%83%90,+%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98/@41.6933675,44.8031776,17z/data=!3m1!4b1!4m6!3m5!1s0x40440cf0022c487b:0x4bc6f6a83e8d78c0!8m2!3d41.6933675!4d44.8053663!16s%2Fg%2F11spdcwvsr"
             target="_blank"
             class="cursor-pointer hover:scale-105 duration-300"
             >
-            <span class="hover:scale-105 text-base  text-shadow">Anton Katalikosi st. 26</span>
+            <div class="flex w-full flex-col align-middle justify-center">
+              <span class="hover:scale-105 text-sm  text-shadow">Anton Katalikosi st. 26</span>
+              <span class="text-xs text-shadow">{{ "(click to Locate)" }}</span>
+            </div>
           </a>
         </div>
         <div class="flex justify-between items-center md:w-[87%] w-full">
-          <span class="text-base md:text-xl text-shadow">Ticket Price:</span>
-          <span class="text-base ">20GEL</span>
+          <span class="text-sm md:text-xl text-shadow">Ticket Price:</span>
+          <span class="text-sm ">20GEL</span>
         </div>
           <h4 class="text-xs -mt-2 md:text-sm">(Price might change on special events)</h4>
-          <span class="text-base md:text-xl text-shadow">To book a table, reach out on:</span>
+          <span class="text-sm md:text-xl text-shadow">Booking</span>
           <div class="flex flex-col md:-mt-2 -mt-3">
             <div class="w-full">
-              <a class=" text-base md:text-xl text-shadow mr-6 pt-2 " href="tel: +995 571 23 98 18">+995 558 28 81 93</a>
+              <a class=" text-sm md:text-base text-shadow mr-6 pt-2 " href="tel: +995 571 23 98 18">+995 558 28 81 93</a>
             </div>
             <div class="flex flex-row">
               <a href="http://m.me/1984Jazz" target="_blank" class="mr-4 mt-2">
@@ -65,13 +68,13 @@
 
     <!-- Right Side -->
     <div class="w-[90%] md:w-[70%] mx-auto md:mx-7">
-      <h1 class="hidden md:block text-white text-3xl md:text-5xl text-shadow">{{event.bandName}} </h1>
-      <h1 class=" text-3xl ml-14 md:ml-0 mt-14 inline-block text-white text-shadow">Members: </h1>
-      <div class="flex flex-col md:grid md:grid-cols-4 mb-5">
+      <h1 class="hidden md:block text-red1984 text-3xl md:text-3xl text-shadow">{{event.bandName}} </h1>
+      <h1 class=" text-2xl ml-14 md:ml-0 mt-3 inline-block text-white text-shadow">Members : </h1>
+      <div class="flex flex-col align-middle md:grid md:grid-cols-4 mb-5">
         <div
           *ngFor="let musician of bandMembers"
-          class="group relative w-full md:w-[14vw] md:h-[340px] mx-auto my-3 md:my-6 py-5 rounded-xl bg-darkBlack
-            hover:scale-105 hover:translate-x-5 duration-300 cursor-pointer
+          class="group relative w-full md:w-[14vw] md:h-[340px] my-3 md:my-6 py-2 rounded-xl bg-darkBlack
+            hover:scale-105 hover:translate-x-3 duration-500 cursor-pointer
             hover:shadow-md hover:shadow-darkGreen
             "
           routerLink="/musicians/{{changeSpaceInLink(musician.name)}}"
@@ -91,7 +94,7 @@
         </div>
 
       </div>
-      <div class="w-[90%] h-[200px] md:h-[55vh] ">
+      <div class="w-full ">
         <app-youtube-slider *ngIf="event.youtubeLinks[0].length > 0" class="youtube rounded-lg mx-auto" [youtubeLinks]="event.youtubeLinks"></app-youtube-slider>
       </div>
     </div>

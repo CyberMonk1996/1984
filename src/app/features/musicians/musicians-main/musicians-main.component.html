@@ -1,6 +1,6 @@
-<div class="min-h-screen pt-4 -mb-6 pb-5 background">
+<div class="min-h-screen pt-[6vh]  pb-5 background">
   <!-- cards container -->
-  <div class="mt-14 md:grid grid-cols-3 gap-6 max-w-[1340px] mx-auto">
+  <div class="md:grid grid-cols-3 gap-6 max-w-[1340px] mx-auto">
     <!-- individual cards -->
     <div
       class="relative group"
@@ -12,8 +12,8 @@
       ">
     </div>
     <div
-      class="min-h-[560px] relative w-[95%] md:w-[95%] mx-auto my-6 pb-5 pt-2 rounded-xl bg-darkBlack hover:scale-105
-         hover:duration-500 hover:translate-x-3 hover:shadow-md cursor-pointer"
+      class=" relative w-[95%] mx-auto my-6 pb-5 pt-2 rounded-xl bg-darkBlack md:hover:scale-105
+         hover:duration-500 md:hover:translate-x-3 md:hover:shadow-md cursor-pointer"
       routerLink="{{changeSpaceInLink(musician.name)}}"
       (click)="changeSpaceInLink(musician.name)"
       >
@@ -26,7 +26,7 @@
       >
       <div class="info text-white mt-3 ml-4">
         <h1 class="text-xl group-hover:text-darkRed duration-1000">{{musician.name}} </h1>
-        <h1 class="text-base group-hover:text-veryLightBrown duration-1000">{{musician.instrument}} </h1>
+        <h1 class="text-base group-hover:text-veryLightBrown  duration-1000">{{musician.instrument}} </h1>
       </div>
     </div>
 

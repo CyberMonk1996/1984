@@ -10,22 +10,24 @@
       class="w-full h-full rounded-lg"
       [src]="band.imageSrc"
       alt="band photo">
-    <!-- Info -->
-    <div class="absolute top-10 w-full ">
-      <!-- <h1 class="text-red1984 text-3xl text-shadow mb-6 text-center">{{band.eventDay}}</h1>
-      <h1 class="text-white text-3xl text-shadow  text-center">{{band.bandName}}</h1> -->
-    </div>
-    <!-- button -->
-    <div class="absolute bottom-3 w-full text-center ">
-      <button
-          [routerLink]="['/events', band.eventDay]"
-          class="z-10 w-[150px] h-12 mt-10 text-white bg-gradient-to-t from-black to-transparent border-2 rounded-lg
-            text-2xl pb-2 font-semibold cursor-pointer hover:scale-110 duration-500 ease-out"
-          style="box-shadow: 5px 4px 7px 2px black;"
-          >
-          <span class="text-xl text-shadow shadow-xl">See More</span>
+    <div class="h-[95%] w-full absolute top-2 z-10 flex flex-col justify-around">
+      <!-- Info -->
+      <div class=" w-full ">
+        <h1 class="text-red1984 text-[28px] text-shadow mb-1 text-center">{{band.eventDay}}</h1>
+        <h1 class="text-white text-[24px] text-shadow  text-center">{{band.bandName}}</h1>
+      </div>
+      <!-- button -->
+      <div class=" w-full text-center ">
+        <button
+            [routerLink]="['/events', band.eventDay]"
+            class="z-10 w-[150px] h-12 mt-10 text-white bg-gradient-to-t from-black to-transparent border-2 rounded-lg
+              text-2xl pb-2 font-semibold cursor-pointer hover:scale-110 duration-500 ease-out"
+            style="box-shadow: 5px 4px 7px 2px black;"
+            >
+            <span class="text-xl text-shadow shadow-xl">See More</span>
 
-        </button>
+          </button>
+      </div>
     </div>
   </div>
 </div>
