@@ -18,7 +18,6 @@ export class VideosComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadVideos();
-    console.log(videos.length)
   }
 
 
