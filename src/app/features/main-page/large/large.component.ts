@@ -9,12 +9,11 @@ import { EventData } from 'src/app/shared/models/event.model';
 })
 export class LargeComponent implements OnInit {
 
-  bandData: EventData[] = [];
+  bandData: EventData[] = eventData;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.bandData = eventData;
   }
 
 }
